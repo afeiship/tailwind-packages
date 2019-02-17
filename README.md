@@ -9,6 +9,6 @@ npm install -S afeiship/slate-plugin-quote --registry=https://registry.npm.taoba
 
 ## usage:
 ```js
-const isCode = editor.value.blocks.some((block) => block.type == 'code');
-editor.setBlocks(isCode ? 'paragraph' : 'code');
+const isQuote = editor.value.blocks.some((block) => block.type == 'quote');
+editor.setBlocks(isQuote ? 'paragraph' : 'quote');
 ```
