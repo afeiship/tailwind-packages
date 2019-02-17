@@ -3,7 +3,7 @@ export default {
     const { children, ...attributes } = inProps;
     switch (inProps.node.type) {
       case 'quote':
-        return <blockquote>{children}</blockquote>;
+        return <blockquote {...attributes}>{children}</blockquote>;
       default:
         return inNext();
     }

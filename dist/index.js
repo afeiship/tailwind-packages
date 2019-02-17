@@ -15,7 +15,7 @@ exports.default = {
       case 'quote':
         return React.createElement(
           'blockquote',
-          null,
+          attributes,
           children
         );
       default:
