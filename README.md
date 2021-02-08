@@ -1,14 +1,8 @@
-# slate-plugin-quote
+# slate-plugin-blockquote
 > SlateJS quote plugin.
 
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/slate-plugin-quote --registry=https://registry.npm.taobao.org
-```
-
-## usage:
-```js
-const isQuote = editor.value.blocks.some((block) => block.type == 'quote');
-editor.setBlocks(isQuote ? 'paragraph' : 'quote');
+npm install -S @jswork/slate-plugin-blockquote
 ```
