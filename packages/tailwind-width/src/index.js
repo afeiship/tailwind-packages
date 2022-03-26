@@ -1,8 +1,8 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = plugin(
-  function ({ matchUtilities, addUtilities, theme, variants, e }) {
-    const values = theme('lineClamp')
+  function ({ matchUtilities, theme }) {
+    const values = theme('widths')
 
     matchUtilities(
       {
@@ -32,7 +32,7 @@ module.exports = plugin(
       },
     },
     variants: {
-      lineClamp: ['responsive'],
+      widths: ['responsive'],
     },
   }
 )
