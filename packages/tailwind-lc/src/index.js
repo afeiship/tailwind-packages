@@ -8,8 +8,10 @@ const basicStyles = {
 };
 
 module.exports = plugin(
-  function ({ matchUtilities, addUtilities, theme, variants, e }) {
+  function ({ addBase, matchUtilities, addUtilities, theme, variants, e }) {
     const values = theme('lineClamp');
+
+    addBase({ '[class^="lc-"]': { ...basicStyles } });
 
     matchUtilities(
       {
