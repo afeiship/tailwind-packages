@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = plugin(
-  function ({ addBase }) {
+  function ({ addBase, theme }) {
     addBase({
       h1: { fontSize: theme('headings.1') },
       h2: { fontSize: theme('headings.2') },
