@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-width",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind for width.",
   "homepage": "https://github.com/afeiship/tailwind-width",
   "main": "src/index.js",
