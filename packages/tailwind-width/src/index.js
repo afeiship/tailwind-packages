@@ -31,8 +31,5 @@ module.exports = plugin(
         10: '10',
       },
     },
-    variants: {
-      widths: ['responsive'],
-    },
   }
 )
