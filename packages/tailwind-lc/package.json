@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-lc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind plugin for line-clamp.",
   "homepage": "https://github.com/afeiship/tailwind-lc",
   "main": "src/index.js",

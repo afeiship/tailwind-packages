@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind base styles.",
   "homepage": "https://github.com/afeiship/tailwind-base",
   "main": "src/index.js",
