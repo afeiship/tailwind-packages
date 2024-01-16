@@ -1,5 +1,5 @@
 {
-  "name": "@jswork/nx-presets",
+  "name": "@jswork/presets-tailwind",
   "version": "1.0.1",
   "description": "Presets for me.",
   "main": "dist/index.cjs.js",
