@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@jswork/wsui-shorty/dist/tailwind.css';
+
+body {
+    background: #eee;
+}
