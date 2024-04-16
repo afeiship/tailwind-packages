@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "@jswork/tailwind-lc": "^1.0.2",
-    "@jswork/tailwind-width": "^1.0.3"
+    "@jswork/tailwind-width": "^1.0.3",
+    "@jswork/tailwind-font-size": "^1.0.1",
+    "@jswork/tailwind-base": "^1.0.2"
   }
 }
