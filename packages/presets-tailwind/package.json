@@ -1,6 +1,6 @@
 {
   "name": "@jswork/presets-tailwind",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Presets for me.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -25,9 +25,9 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@jswork/tailwind-lc": "^1.0.2",
-    "@jswork/tailwind-width": "^1.0.3",
+    "@jswork/tailwind-base": "^1.0.2",
     "@jswork/tailwind-font-size": "^1.0.1",
-    "@jswork/tailwind-base": "^1.0.2"
+    "@jswork/tailwind-lc": "^1.0.2",
+    "@jswork/tailwind-width": "^1.0.3"
   }
 }
