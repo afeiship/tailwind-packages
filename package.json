@@ -1,13 +1,8 @@
 {
-  "name": "@afeiship/tailwind-plugins",
+  "name": "tailwind-plugins",
   "private": true,
   "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
-  "devDependencies": {
-    "lerna": "^3.22.1"
+    "packages": ["packages/*"]
   },
   "scripts": {
     "start": "yarn --cwd packages/websites start",
