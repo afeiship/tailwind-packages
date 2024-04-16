@@ -13,9 +13,14 @@ npm install @jswork/presets-tailwind
 
 ## usage
 ```js
-import nxPresets from '@jswork/presets-tailwind';
-
-// usage goes here.
+/** @type {import('tailwindcss').Config} */
+export default {
+  presets: [require('@jswork/presets-tailwind')],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {}
+  }
+};
 ```
 
 ## license
