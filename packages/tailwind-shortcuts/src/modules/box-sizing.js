@@ -2,10 +2,10 @@ module.exports = function (pluginConfig) {
   const { addComponents } = pluginConfig
   return addComponents({
     '.bsb': {
-      'box-sizing': 'border-box',
+      boxSizing: 'border-box',
     },
     '.bsc': {
-      'box-sizing': 'content-box',
+      boxSizing: 'content-box',
     },
   })
 }

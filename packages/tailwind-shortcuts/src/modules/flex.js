@@ -3,35 +3,35 @@ module.exports = function (pluginConfig) {
   return addComponents({
     '.x': {
       display: 'flex',
-      'flex-direction': 'row',
+      flexDirection: 'row',
     },
     '.y': {
       display: 'flex',
-      'flex-direction': 'column',
+      flexDirection: 'column',
     },
     '.fc': {
       display: 'flex',
-      'align-items': 'center',
+      alignItems: 'center',
     },
     '.fca': {
       display: 'flex',
-      'align-items': 'center',
-      'justify-content': 'space-around',
+      alignItems: 'center',
+      justifyContent: 'space-around',
     },
     '.fcb': {
       display: 'flex',
-      'align-items': 'center',
-      'justify-content': 'space-between',
+      alignItems: 'center',
+      justifyContent: 'space-between',
     },
     '.fce': {
       display: 'flex',
-      'align-items': 'center',
-      'justify-content': 'flex-end',
+      alignItems: 'center',
+      justifyContent: 'flex-end',
     },
     '.fcv': {
       display: 'flex',
-      'align-items': 'center',
-      'justify-content': 'space-evenly',
+      alignItems: 'center',
+      justifyContent: 'space-evenly',
     },
   })
 }
