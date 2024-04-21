@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-heading",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind heading styles.",
   "homepage": "https://github.com/afeiship/tailwind-heading",
   "main": "src/index.js",
