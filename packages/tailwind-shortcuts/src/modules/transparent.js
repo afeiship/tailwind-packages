@@ -2,16 +2,16 @@ module.exports = function (pluginConfig) {
   const { addComponents } = pluginConfig
   return addComponents({
     '.opacity-text': {
-      color: 'transparent'
+      color: 'transparent',
     },
     '.opacity-bg': {
-      background: 'transparent'
+      background: 'transparent',
     },
     '.vis-v': {
-      visibility: 'visible'
+      visibility: 'visible',
     },
     '.vis-h': {
-      visibility: 'hidden'
-    }
+      visibility: 'hidden',
+    },
   })
 }

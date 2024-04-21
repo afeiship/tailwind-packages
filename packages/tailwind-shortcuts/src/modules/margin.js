@@ -3,22 +3,22 @@ module.exports = function (pluginConfig) {
   return addComponents({
     '.mt_': {
       '> *:first-child': {
-        marginTop: 0,
+        'margin-top': 0,
       },
     },
     '.mr_': {
       '> *:last-child': {
-        marginRight: 0,
+        'margin-right': 0,
       },
     },
     '.mb_': {
       '> *:last-child': {
-        marginBottom: 0,
+        'margin-bottom': 0,
       },
     },
     '.ml_': {
       '> *:first-child': {
-        marginLeft: 0,
+        'margin-left': 0,
       },
     },
   })
