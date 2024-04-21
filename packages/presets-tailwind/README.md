@@ -13,9 +13,10 @@ npm install @jswork/presets-tailwind
 
 ## usage
 ```js
+import jswTailwind from '@jswork/presets-tailwind';
 /** @type {import('tailwindcss').Config} */
 export default {
-  presets: [require('@jswork/presets-tailwind')],
+  presets: [jswTailwind]
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {}
