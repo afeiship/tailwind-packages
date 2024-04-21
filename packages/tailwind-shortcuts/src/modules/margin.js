@@ -2,7 +2,7 @@ module.exports = function (pluginConfig) {
   const { addComponents } = pluginConfig
   return addComponents({
     '.mt_': {
-      '> *:last-child': {
+      '> *:first-child': {
         marginTop: 0,
       },
     },
@@ -17,7 +17,7 @@ module.exports = function (pluginConfig) {
       },
     },
     '.ml_': {
-      '> *:last-child': {
+      '> *:first-child': {
         marginLeft: 0,
       },
     },
