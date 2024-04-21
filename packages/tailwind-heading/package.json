@@ -1,8 +1,8 @@
 {
-  "name": "@jswork/tailwind-base",
-  "version": "1.0.2",
-  "description": "Tailwind base styles.",
-  "homepage": "https://github.com/afeiship/tailwind-base",
+  "name": "@jswork/tailwind-heading",
+  "version": "1.0.0",
+  "description": "Tailwind heading styles.",
+  "homepage": "https://github.com/afeiship/tailwind-heading",
   "main": "src/index.js",
   "license": "MIT",
   "prettier": {

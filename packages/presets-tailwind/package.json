@@ -25,7 +25,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@jswork/tailwind-base": "^1.0.2",
+    "@jswork/tailwind-heading": "^1.0.0",
     "@jswork/tailwind-font-size": "^1.0.1",
     "@jswork/tailwind-lc": "^1.0.2",
     "@jswork/tailwind-shortcuts": "^1.0.2",
