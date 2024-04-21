@@ -77,25 +77,35 @@ module.exports = function (pluginConfig) {
     '.l100': {
       left: '100%',
     },
-    '.p-top': {
+    '.abs-top': {
       top: 0,
       left: 0,
       right: 0,
     },
-    '.p-right': {
+    '.abs-right': {
       top: 0,
       right: 0,
       bottom: 0,
     },
-    '.p-bottom': {
+    '.abs-bottom': {
       bottom: 0,
       left: 0,
       right: 0,
     },
-    '.p-left': {
+    '.abs-left': {
       top: 0,
       left: 0,
       bottom: 0,
+    },
+    'abs-center': {
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+    },
+    'abs-gold-center':{
+      top: '37.5%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
     }
   })
 }
