@@ -1,6 +1,6 @@
 {
   "name": "@jswork/presets-tailwind",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Presets for me.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
