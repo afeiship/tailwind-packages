@@ -29,13 +29,5 @@ module.exports = plugin(
     moduleText(pluginConfig)
     moduleTransform(pluginConfig)
     moduleZIndex(pluginConfig)
-  },
-  {
-    theme: {
-      flexGapRange: {
-        start: 0,
-        end: 100,
-      },
-    },
   }
 )

@@ -1,19 +1,15 @@
-module.exports = function (pluginConfig) {
-  const { addUtilities, theme } = pluginConfig
-  const { start, end } = theme('flexGapRange')
-
-  for (let i = start; i <= end; i++) {
-    const rem = i / 4
-    addUtilities({
-      [`.x-${i}`]: {
-        display: 'flex',
-        gap: `${rem}rem`,
-      },
-      [`.y-${i}`]: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: `${rem}rem`,
-      },
+module.exports = function(pluginConfig) {
+  const { matchUtilities, theme } = pluginConfig;
+  const values = theme('spacing');
+  matchUtilities({
+    x: (value) => ({
+      display: 'flex',
+      gap: `${value}rem`
+    }),
+    y: (value) => ({
+      display: 'flex',
+      flexDirection: 'column',
+      gap: `${value}rem`
     })
-  }
-}
+  }, { values });
+};
