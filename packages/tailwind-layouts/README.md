@@ -1,7 +1,7 @@
-# tailwind-width
-> Tailwind for width.
+# tailwind-layouts
+> Tailwind for layouts.
 
 ## installation
 ```shell
-npm install @jswork/tailwind-width
+npm install @jswork/tailwind-layouts
 ```

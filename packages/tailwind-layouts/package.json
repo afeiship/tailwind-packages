@@ -1,8 +1,7 @@
 {
-  "name": "@jswork/tailwind-width",
+  "name": "@jswork/tailwind-layouts",
   "version": "1.0.4",
-  "description": "Tailwind for width.",
-  "homepage": "https://github.com/afeiship/tailwind-width",
+  "description": "Tailwind for layouts.",
   "main": "src/index.js",
   "license": "MIT",
   "prettier": {
