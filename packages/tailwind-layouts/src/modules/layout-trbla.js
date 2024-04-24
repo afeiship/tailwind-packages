@@ -13,8 +13,12 @@
 
 module.exports = function(pluginApi) {
   const { addComponents } = pluginApi;
+
   addComponents({
-    // two elements(1: fixed width, 2: auto)
+    // class=^.layout-trbla-.*$
+    '[class^="layout-trbla-"]': {
+      display: 'flex'
+    },
     '.layout-trbla-sa': {
       '& > *': {
         '&:nth-child(2)': {
