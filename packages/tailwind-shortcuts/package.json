@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-shortcuts",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Tailwind shortcuts for common styles.",
   "main": "src/index.js",
   "license": "MIT",
