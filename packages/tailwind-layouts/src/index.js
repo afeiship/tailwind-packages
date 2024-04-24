@@ -1,7 +1,9 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
+const moduleLayoutTrbla = require('./modules/layout-trbla');
 
 module.exports = plugin(
-  function ({ matchUtilities, theme }) {
+  function(pluginApi) {
     // Add custom utilities here
+    moduleLayoutTrbla(pluginApi);
   }
-)
+);
