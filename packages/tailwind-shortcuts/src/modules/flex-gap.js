@@ -3,15 +3,16 @@ module.exports = function (pluginConfig) {
   const { start, end } = theme('flexGapRange')
 
   for (let i = start; i <= end; i++) {
+    const rem = i / 16
     addUtilities({
       [`.x-${i}`]: {
         display: 'flex',
-        gap: `${i}rem 0`,
+        gap: `${rem}rem`,
       },
       [`.y-${i}`]: {
         display: 'flex',
         flexDirection: 'column',
-        gap: `0 ${i}rem`,
+        gap: `${rem}rem`,
       },
     })
   }
