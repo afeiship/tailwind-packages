@@ -4,12 +4,12 @@ module.exports = function(pluginConfig) {
   matchUtilities({
     x: (value) => ({
       display: 'flex',
-      gap: `${value}rem`
+      gap: value
     }),
     y: (value) => ({
       display: 'flex',
       flexDirection: 'column',
-      gap: `${value}rem`
+      gap: value
     })
   }, { values });
 };
