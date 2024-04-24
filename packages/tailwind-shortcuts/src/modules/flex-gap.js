@@ -3,7 +3,7 @@ module.exports = function (pluginConfig) {
   const { start, end } = theme('flexGapRange')
 
   for (let i = start; i <= end; i++) {
-    const rem = i / 16
+    const rem = i / 4
     addUtilities({
       [`.x-${i}`]: {
         display: 'flex',
