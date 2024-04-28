@@ -15,7 +15,7 @@
 module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
 
-  addComponents({
+  return addComponents({
     '.layout-trbla-sa': {
       '& > *': {
         '&:first-child': {
@@ -38,7 +38,7 @@ module.exports = function (pluginApi) {
       '& > *': {
         '&:last-child': {
           'flex-shrink': 0,
-        }
+        },
       },
     },
     '.layout-trbla-se': {
