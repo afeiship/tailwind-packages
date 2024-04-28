@@ -8,6 +8,11 @@ module.exports = function (pluginApi) {
 
   return addComponents({
     '.layout-translate-center': {
+      top: '37.5%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+    },
+    '.layout-translate-center-xy': {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
