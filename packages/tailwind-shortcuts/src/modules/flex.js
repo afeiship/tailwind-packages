@@ -23,6 +23,11 @@ module.exports = function (pluginConfig) {
       alignItems: 'center',
       justifyContent: 'space-between',
     },
+    '.fcc': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
     '.fce': {
       display: 'flex',
       alignItems: 'center',
