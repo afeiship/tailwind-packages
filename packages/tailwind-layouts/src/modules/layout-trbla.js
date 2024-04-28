@@ -24,9 +24,6 @@ module.exports = function (pluginApi) {
         '&:first-child': {
           'flex-shrink': 0,
         },
-        '&:nth-child(2)': {
-          flex: 1,
-        },
       },
     },
     '.layout-trbla-sae': {
@@ -38,19 +35,13 @@ module.exports = function (pluginApi) {
         '&:last-child': {
           'flex-shrink': 0,
         },
-        '&:nth-child(2)': {
-          flex: 1,
-        },
       },
     },
     '.layout-trbla-ae': {
       '& > *': {
         '&:last-child': {
           'flex-shrink': 0,
-        },
-        '&:nth-child(1)': {
-          flex: 1,
-        },
+        }
       },
     },
     '.layout-trbla-se': {
