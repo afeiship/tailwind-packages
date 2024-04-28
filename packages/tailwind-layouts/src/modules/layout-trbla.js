@@ -15,10 +15,6 @@ module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
 
   addComponents({
-    // class=^.layout-trbla-.*$
-    '[class^="layout-trbla-"]': {
-      display: 'flex',
-    },
     '.layout-trbla-sa': {
       '& > *': {
         '&:first-child': {
