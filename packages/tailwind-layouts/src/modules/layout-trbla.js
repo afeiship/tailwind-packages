@@ -1,4 +1,5 @@
 // https://github.com/afeiship/wsui-layout-trbla/blob/master/src/index.scss
+// https://tailwindcss.com/docs/flex-shrink
 // left -> auto -> right[sae]
 // 'la',
 // 'lar',
