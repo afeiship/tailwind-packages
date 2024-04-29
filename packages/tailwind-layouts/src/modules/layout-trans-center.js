@@ -7,21 +7,21 @@ module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
 
   return addComponents({
-    '.layout-translate-center': {
+    '.layout-trans-center': {
       top: '37.5%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
     },
-    '.layout-translate-center-xy': {
+    '.layout-trans-center-xy': {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
     },
-    '.layout-translate-center-x': {
+    '.layout-trans-center-x': {
       left: '50%',
       transform: 'translateX(-50%)',
     },
-    '.layout-translate-center-y': {
+    '.layout-trans-center-y': {
       top: '50%',
       transform: 'translateY(-50%)',
     },
