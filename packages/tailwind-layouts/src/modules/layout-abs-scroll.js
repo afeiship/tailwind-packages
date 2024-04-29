@@ -1,0 +1,13 @@
+module.exports = function (pluginApi) {
+  const { addComponents } = pluginApi
+
+  return addComponents({
+    '.layout-abs-scroll': {
+      padding: 'inherit',
+      top: '0',
+      right: '0',
+      bottom: '0',
+      left: '0',
+    },
+  })
+}
