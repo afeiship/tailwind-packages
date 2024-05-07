@@ -38,5 +38,13 @@ module.exports = function (pluginConfig) {
       alignItems: 'center',
       justifyContent: 'space-evenly',
     },
+    '.fjc': {
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    '.fje': {
+      display: 'flex',
+      justifyContent: 'flex-end',
+    },
   })
 }
