@@ -1,5 +1,5 @@
 /**
- * <nav>
+ * <nav class="layout-inline-items">
  *   <a href="#1">日历最新版2024</a>
  *   <a href="#2">年的万年历全表日历安</a>
  *   <a href="#3">装2024正版中国日历万</a>
