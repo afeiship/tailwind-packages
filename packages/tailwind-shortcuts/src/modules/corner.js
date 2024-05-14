@@ -16,6 +16,7 @@ module.exports = function (pluginConfig) {
     },
     '.corner-bottom-right, .corner-b': {
       bottom: 0,
+      right: 0,
     },
     '.corner-bottom-left, .corner-l': {
       bottom: 0,
