@@ -1,4 +1,4 @@
-// https://github.com/afeiship/wsui-layout-trbla/blob/master/src/index.scss
+// https://github.com/afeiship/wsui-layout-flex/blob/master/src/index.scss
 // https://tailwindcss.com/docs/flex-shrink
 // left -> auto -> right[sae]
 // 'la',
@@ -16,8 +16,8 @@ module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
 
   return addComponents({
-    // class=^.layout-trbla-.*$
-    '.layout-trbla-sa': {
+    // class=^.layout-flex-.*$
+    '.layout-flex-sa': {
       '& > *': {
         '&:first-child': {
           'flex-shrink': 0,
@@ -27,7 +27,7 @@ module.exports = function (pluginApi) {
         },
       },
     },
-    '.layout-trbla-sae': {
+    '.layout-flex-sae': {
       justifyContent: 'space-between',
       '& > *': {
         '&:first-child': {
@@ -41,7 +41,7 @@ module.exports = function (pluginApi) {
         },
       },
     },
-    '.layout-trbla-ae': {
+    '.layout-flex-ae': {
       '& > *': {
         '&:last-child': {
           'flex-shrink': 0,
@@ -51,7 +51,7 @@ module.exports = function (pluginApi) {
         },
       },
     },
-    '.layout-trbla-se': {
+    '.layout-flex-se': {
       justifyContent: 'space-between',
     },
   })
