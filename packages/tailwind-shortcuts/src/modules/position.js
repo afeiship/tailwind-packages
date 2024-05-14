@@ -1,6 +1,12 @@
 module.exports = function (pluginConfig) {
-  const { addComponents } = pluginConfig
+  const { addComponents } = pluginConfig;
   return addComponents({
+    '.rel': {
+      position: 'relative',
+    },
+    '.abs': {
+      position: 'absolute',
+    },
     '.t0': {
       top: 0,
     },
@@ -102,10 +108,10 @@ module.exports = function (pluginConfig) {
       left: '50%',
       transform: 'translate(-50%, -50%)',
     },
-    'abs-gold-center':{
+    'abs-gold-center': {
       top: '37.5%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-    }
-  })
-}
+    },
+  });
+};
