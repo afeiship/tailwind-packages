@@ -31,5 +31,6 @@
     "@jswork/tailwind-lc": "^1.0.3",
     "@jswork/tailwind-shortcuts": "^1.0.18",
     "@jswork/tailwind-width": "^1.0.4"
-  }
+  },
+  "gitHead": "d73d1e41c723ef469be49cdd860073cda08ae8f1"
 }
