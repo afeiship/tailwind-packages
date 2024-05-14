@@ -1,3 +1,5 @@
+// This file is used to add the corner classes to the tailwind config.
+
 module.exports = function (pluginConfig) {
   const { addComponents } = pluginConfig
   return addComponents({
