@@ -1121,6 +1121,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@jswork/style-guide@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/@jswork/style-guide/-/style-guide-1.0.1.tgz#028b410d60203f540a870b68daf991d1b9b34b45"
+  integrity sha512-6GOrqqt4xKwvBfA7/dwkLkmwVSVqXfoD4JBTYNCLOYFScjiUYTkTyZcmAQysGG4QG8Q85Ti4C9gBJ1Tsj/kBoA==
+
 "@jswork/wsui-shorty@^1.1.1":
   version "1.1.1"
   resolved "https://registry.npmjs.org/@jswork/wsui-shorty/-/wsui-shorty-1.1.1.tgz#97e2869fd57d49f059a4c790f2b1780162d43b25"
@@ -4403,6 +4408,11 @@ prettier@^2.5.1:
   version "2.6.1"
   resolved "https://registry.npmmirror.com/prettier/-/prettier-2.6.1.tgz#d472797e0d7461605c1609808e27b80c0f9cfe17"
   integrity sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==
+
+prettier@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.npmmirror.com/prettier/-/prettier-3.2.5.tgz#e52bc3090586e824964a8813b09aba6233b28368"
+  integrity sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==
 
 pretty-format@^27.5.1:
   version "27.5.1"
