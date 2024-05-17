@@ -1,6 +1,7 @@
 const nxPresets = () => {
   return {
     plugins: [
+      require('@jswork/tailwind-blank'),
       require('@jswork/tailwind-font-size'),
       require('@jswork/tailwind-heading'),
       require('@jswork/tailwind-layouts'),
