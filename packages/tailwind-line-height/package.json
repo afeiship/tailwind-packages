@@ -1,0 +1,26 @@
+{
+  "name": "@jswork/tailwind-line-height",
+  "version": "1.0.0",
+  "description": "tailwind-line-height-description",
+  "main": "src/index.js",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "quoteProps": "consistent"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.4",
+    "tailwindcss": "^3.4.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
