@@ -8,12 +8,12 @@ module.exports = plugin(
         '[class*="blank-"]': {
           fontSize: 0,
           lineHeight: 0,
-          clean: 'both',
+          clean: 'both'
         },
-        '.blank-x': (value) => ({
+        'blank-x': (value) => ({
           width: value
         }),
-        '.blank-y': (value) => ({
+        'blank-y': (value) => ({
           height: value
         })
       },
