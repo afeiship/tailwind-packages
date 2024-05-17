@@ -1,6 +1,6 @@
 {
   "name": "@jswork/presets-tailwind",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "Presets for me.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -25,7 +25,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@jswork/tailwind-blank": "^1.0.1",
+    "@jswork/tailwind-blank": "^1.0.2",
     "@jswork/tailwind-font-size": "^1.0.1",
     "@jswork/tailwind-heading": "^1.0.1",
     "@jswork/tailwind-layouts": "^1.0.19",
