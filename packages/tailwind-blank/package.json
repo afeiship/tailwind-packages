@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-blank",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tailwind plugin for blanks.",
   "main": "src/index.js",
   "license": "MIT",
