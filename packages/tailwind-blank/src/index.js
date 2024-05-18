@@ -22,12 +22,19 @@ module.exports = plugin(function ({ matchUtilities, theme }) {
       'blank-y': (value) => ({
         height: value,
       }),
+      '.blank-px-x': (value) => ({
+        width: parseFloat(value) / 16 + 'rem',
+      }),
+      '.blank-px-y': (value) => ({
+        height: parseFloat(value) / 16 + 'rem',
+      }),
     },
     { values: theme('spacing') },
   );
 
   matchUtilities(
     {
+      // tailwind spacing
       'blanks-r': (value) => {
         return generateBlanks(value, (val) => ({ marginRight: `${val * 0.25}rem` }));
       },
@@ -39,6 +46,19 @@ module.exports = plugin(function ({ matchUtilities, theme }) {
       },
       'blanks-b': (value) => {
         return generateBlanks(value, (val) => ({ marginBottom: `${val * 0.25}rem` }));
+      },
+      // blanks-px
+      '.blanks-px-r': (value) => {
+        return generateBlanks(value, (val) => ({ marginRight: `${val / 16}rem` }));
+      },
+      '.blanks-px-l': (value) => {
+        return generateBlanks(value, (val) => ({ marginLeft: `${val / 16}rem` }));
+      },
+      '.blanks-px-t': (value) => {
+        return generateBlanks(value, (val) => ({ marginTop: `${val / 16}rem` }));
+      },
+      '.blanks-px-b': (value) => {
+        return generateBlanks(value, (val) => ({ marginBottom: `${val / 16}rem` }));
       },
     },
     { values: theme('spacing') },
