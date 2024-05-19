@@ -1,25 +1,61 @@
-import { useState } from "react";
+import GridList from './components/grid-list';
+import VarComp from './components/var-comp';
+import ChildVariant from './components/child-variant';
+import TwSubChild from './components/tw-sub-child';
+import FlexGap from './components/flex-gap';
+import LayoutTrbla from './components/layout-flex.tsx';
+import LayoutAbsCenter from './components/layout-abs-center.tsx';
+import LayoutTranslateCenter from './components/layout-trans-center.tsx';
+import ShortcutsCorner from './components/shortcuts-corner.tsx';
+import LhComponents from './components/lh-components.tsx';
+import Blanks from './components/blanks.tsx';
+import FullSpacings from './components/full-spacings.tsx';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1 className="tc z1">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <div className="wp-5 mx-auto rounded-md border bg-slate-50 p-4 transition-all hover:bg-slate-100">
-          <div className="lc-2 flex">
-            清晨醒来，打开窗帘，一抹慵懒的阳光照进来，暖暖的，柔柔的，时光瞬间变得温婉静美，打开音乐，沏一杯花茶，躺在床上，暖阳淼淼，茶香淡淡，音乐袅袅，闭上眼睛，嘴角轻轻上扬，算是对着光阴的镜子，和自己撒个娇。
-          </div>
-        </div>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
+      <h1 className="text-2xl">Hello World</h1>
+      <p className="z1">
+        App<sup className="f8 z2">1.0.0</sup>
       </p>
-    </>
+      <GridList>
+        <div className="grid-item">item1</div>
+        <div className="grid-item">item1</div>
+        <div className="grid-item">item1</div>
+        <div className="grid-item">item1</div>
+        <div className="grid-item">item1</div>
+      </GridList>
+      <div className="my-2 flex flex-col gap-1 border border-solid border-green-600 p-2">
+        <VarComp level="1" />
+        <VarComp level="2" />
+        <VarComp level="3" />
+      </div>
+      <ChildVariant />
+      <TwSubChild />
+
+      <div className="mb_ border border-solid border-slate-500 *:mb-2">
+        <button className="btn">Button</button>
+        <button className="btn">Button</button>
+        <button className="btn">Button</button>
+        <button className="btn">Button</button>
+      </div>
+      <hr />
+      <FlexGap />
+      <hr />
+      <LayoutTrbla />
+      <hr />
+      <LayoutAbsCenter />
+      <hr />
+      <LayoutTranslateCenter />
+      <hr />
+      <ShortcutsCorner />
+      <hr />
+      <LhComponents />
+      <hr />
+      <Blanks />
+      <hr />
+      <FullSpacings />
+    </div>
   );
 }
 

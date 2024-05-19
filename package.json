@@ -5,7 +5,7 @@
     "packages": ["packages/*"]
   },
   "scripts": {
-    "start": "yarn --cwd packages/websites start",
+    "dev": "yarn --cwd packages/websites dev",
     "lerna:clean": "lerna clean",
     "lerna:list": "lerna list",
     "lerna:bootstrap": "lerna bootstrap",
