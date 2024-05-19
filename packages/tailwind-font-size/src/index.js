@@ -1,15 +1,17 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 
-module.exports = plugin(function ({ matchUtilities, theme }) {
+module.exports = plugin(function({ matchUtilities, theme }) {
   matchUtilities(
     {
       f: (value) => ({
-        fontSize: value,
+        fontSize: value
       }),
-      'f-px': (value) => ({
-        fontSize: parseInt(value) / 16 + 'px',
-      }),
+      'f-px': (value) => {
+        return {
+          fontSize: parseInt(value) * 0.25 + 'rem'
+        };
+      }
     },
     { values: theme('spacing') }
-  )
-})
+  );
+});
