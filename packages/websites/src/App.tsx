@@ -3,17 +3,17 @@ import VarComp from './components/var-comp';
 import ChildVariant from './components/child-variant';
 import TwSubChild from './components/tw-sub-child';
 import FlexGap from './components/flex-gap';
-import LayoutTrbla from './components/layout-flex.tsx';
-import LayoutAbsCenter from './components/layout-abs-center.tsx';
-import LayoutTranslateCenter from './components/layout-trans-center.tsx';
-import ShortcutsCorner from './components/shortcuts-corner.tsx';
-import LhComponents from './components/lh-components.tsx';
-import Blanks from './components/blanks.tsx';
-import FullSpacings from './components/full-spacings.tsx';
+import LayoutFlex from './components/layout-flex';
+import LayoutAbsCenter from './components/layout-abs-center';
+import LayoutTranslateCenter from './components/layout-trans-center';
+import ShortcutsCorner from './components/shortcuts-corner';
+import LhComponents from './components/lh-components';
+import Blanks from './components/blanks';
+import FullSpacings from './components/full-spacings';
 
 function App() {
   return (
-    <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
+    <div className="mx-auto mt-20 y bg-gray-200 p-10">
       <h1 className="text-2xl">Hello World</h1>
       <p className="z1">
         App<sup className="f8 z2">1.0.0</sup>
@@ -42,7 +42,7 @@ function App() {
       <hr />
       <FlexGap />
       <hr />
-      <LayoutTrbla />
+      <LayoutFlex />
       <hr />
       <LayoutAbsCenter />
       <hr />

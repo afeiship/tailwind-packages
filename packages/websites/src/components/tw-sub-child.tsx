@@ -18,7 +18,8 @@ const Anonymous = (props: AnonymousProps) => {
     <div
       className={cx(className, 'my-2 border border-green-600 p-3')}
       {...restProps}>
-      <ul className="... flex gap-2 *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-4 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10">
+      <ul
+        className="flex gap-2 *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-4 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10">
         <li>Sales</li>
         <li>Marketing</li>
         <li>SEO</li>

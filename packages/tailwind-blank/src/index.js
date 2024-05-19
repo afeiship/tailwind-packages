@@ -8,28 +8,28 @@ const generateBlanks = (value, callback) => {
   return result;
 };
 
-module.exports = plugin(function ({ matchUtilities, theme }) {
+module.exports = plugin(function({ matchUtilities, theme }) {
   matchUtilities(
     {
       '[class*="blank-"]': {
         fontSize: 0,
         lineHeight: 0,
-        clean: 'both',
+        clean: 'both'
       },
       'blank-x': (value) => ({
-        width: value,
+        width: value
       }),
       'blank-y': (value) => ({
-        height: value,
+        height: value
       }),
-      '.blank-px-x': (value) => ({
-        width: parseFloat(value) / 16 + 'rem',
+      'blank-px-x': (value) => ({
+        width: parseFloat(value) / 16 + 'rem'
       }),
-      '.blank-px-y': (value) => ({
-        height: parseFloat(value) / 16 + 'rem',
-      }),
+      'blank-px-y': (value) => ({
+        height: parseFloat(value) / 16 + 'rem'
+      })
     },
-    { values: theme('spacing') },
+    { values: theme('spacing') }
   );
 
   matchUtilities(
@@ -48,19 +48,19 @@ module.exports = plugin(function ({ matchUtilities, theme }) {
         return generateBlanks(value, (val) => ({ marginBottom: `${val * 0.25}rem` }));
       },
       // blanks-px
-      '.blanks-px-r': (value) => {
+      'blanks-px-r': (value) => {
         return generateBlanks(value, (val) => ({ marginRight: `${val / 16}rem` }));
       },
-      '.blanks-px-l': (value) => {
+      'blanks-px-l': (value) => {
         return generateBlanks(value, (val) => ({ marginLeft: `${val / 16}rem` }));
       },
-      '.blanks-px-t': (value) => {
+      'blanks-px-t': (value) => {
         return generateBlanks(value, (val) => ({ marginTop: `${val / 16}rem` }));
       },
-      '.blanks-px-b': (value) => {
+      'blanks-px-b': (value) => {
         return generateBlanks(value, (val) => ({ marginBottom: `${val / 16}rem` }));
-      },
+      }
     },
-    { values: theme('spacing') },
+    { values: theme('spacing') }
   );
 });
