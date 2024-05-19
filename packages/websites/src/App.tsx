@@ -10,7 +10,7 @@ import ShortcutsCorner from './components/shortcuts-corner';
 import LhComponents from './components/lh-components';
 import Blanks from './components/blanks';
 import FullSpacings from './components/full-spacings';
-import FontSize from './components/font-size.tsx';
+import FontSize from './components/font-size';
 
 function App() {
   return (

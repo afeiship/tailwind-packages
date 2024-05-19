@@ -23,10 +23,10 @@ module.exports = plugin(function({ matchUtilities, theme }) {
         height: value
       }),
       'blank-px-x': (value) => ({
-        width: parseFloat(value) * 0.25 + 'rem'
+        width: parseFloat(value) / 16 + 'rem'
       }),
       'blank-px-y': (value) => ({
-        height: parseFloat(value) * 0.25 + 'rem'
+        height: parseFloat(value) / 16 + 'rem'
       })
     },
     { values: theme('spacing') }
@@ -36,29 +36,29 @@ module.exports = plugin(function({ matchUtilities, theme }) {
     {
       // tailwind spacing
       'blanks-r': (value) => {
-        return generateBlanks(value, (val) => ({ marginRight: val }));
+        return generateBlanks(value, (val) => ({ marginRight: `${val * 0.25}rem` }));
       },
       'blanks-l': (value) => {
-        return generateBlanks(value, (val) => ({ marginLeft: val }));
+        return generateBlanks(value, (val) => ({ marginLeft: `${val * 0.25}rem` }));
       },
       'blanks-t': (value) => {
-        return generateBlanks(value, (val) => ({ marginTop: val }));
+        return generateBlanks(value, (val) => ({ marginTop: `${val * 0.25}rem` }));
       },
       'blanks-b': (value) => {
-        return generateBlanks(value, (val) => ({ marginBottom: val }));
+        return generateBlanks(value, (val) => ({ marginBottom: `${val * 0.25}rem` }));
       },
       // blanks-px
       'blanks-px-r': (value) => {
-        return generateBlanks(value, (val) => ({ marginRight: `${parseFloat(val) * 0.25}rem` }));
+        return generateBlanks(value, (val) => ({ marginRight: `${val / 16}rem` }));
       },
       'blanks-px-l': (value) => {
-        return generateBlanks(value, (val) => ({ marginLeft: `${parseFloat(val) * 0.25}rem` }));
+        return generateBlanks(value, (val) => ({ marginLeft: `${val / 16}rem` }));
       },
       'blanks-px-t': (value) => {
-        return generateBlanks(value, (val) => ({ marginTop: `${parseFloat(val) * 0.25}rem` }));
+        return generateBlanks(value, (val) => ({ marginTop: `${val / 16}rem` }));
       },
       'blanks-px-b': (value) => {
-        return generateBlanks(value, (val) => ({ marginBottom: `${parseFloat(val) * 0.25}rem` }));
+        return generateBlanks(value, (val) => ({ marginBottom: `${val / 16}rem` }));
       }
     },
     { values: theme('spacing') }
