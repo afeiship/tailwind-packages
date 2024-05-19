@@ -6,14 +6,11 @@
   "license": "MIT",
   "prettier": "@jswork/style-guide/prettier",
   "devDependencies": {
-    "@jswork/style-guide": "^1.0.1",
     "jest": "^27.4.4",
-    "postcss": "^8.2.2",
-    "prettier": "^3.2.5",
-    "tailwindcss": "^3.0.23"
-  },
-  "peerDependencies": {
-    "tailwindcss": ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
+    "@jswork/style-guide": "^1.0.1",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.4",
+    "tailwindcss": "^3.4.3"
   },
   "publishConfig": {
     "access": "public",
