@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-font-weight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind CSS plugin to add font-weight utilities.",
   "main": "src/index.js",
   "license": "MIT",
