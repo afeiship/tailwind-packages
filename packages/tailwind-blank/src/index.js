@@ -8,14 +8,16 @@ const generateBlanks = (value, callback) => {
   return result;
 };
 
-module.exports = plugin(function ({ matchUtilities, theme }) {
+const baseBlankStyles = {
+  fontSize: 0,
+  lineHeight: 0,
+  clean: 'both',
+};
+
+module.exports = plugin(function ({ addBase, matchUtilities, theme }) {
+  addBase({ '[class^="blank-"]': baseBlankStyles });
   matchUtilities(
     {
-      '[class*="blank-"]': {
-        fontSize: 0,
-        lineHeight: 0,
-        clean: 'both',
-      },
       'blank-x': (value) => ({
         width: value,
       }),

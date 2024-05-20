@@ -11,6 +11,7 @@ import LhComponents from './components/lh-components';
 import Blanks from './components/blanks';
 import FullSpacings from './components/full-spacings';
 import FontSize from './components/font-size';
+import Fw from './components/fw';
 
 function App() {
   return (
@@ -58,6 +59,8 @@ function App() {
       <FullSpacings />
       <hr />
       <FontSize />
+      <hr/>
+      <Fw />
     </div>
   );
 }
