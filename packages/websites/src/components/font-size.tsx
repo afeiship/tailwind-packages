@@ -10,8 +10,10 @@ export default () => {
       <ul>
         <li className="f-5">不尚贤，使民不争；不贵难得之货，使民不为盗；不见可欲，使民心不乱。</li>
         <li className="f-6">是以圣人之治，虚其心，实其腹，弱其志，强其骨，常使民无知无欲。</li>
-        <li className="f-px-24">使夫知者不敢为也。</li>
-        <li className="f-px-40">为无为，则无不治。</li>
+        <li className="f-px-8">font-size: 8px; 使夫知者不敢为也。</li>
+        <li className="f-px-10">font-size: 10px; 使夫知者不敢为也。</li>
+        <li className="f-px-24"> font-size: 24px; 使夫知者不敢为也。</li>
+        <li className="f-px-40"> font-size: 40px; 为无为，则无不治。</li>
       </ul>
     </div>
   );
