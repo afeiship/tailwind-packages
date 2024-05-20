@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-padding",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind plugin for padding.",
   "main": "src/index.js",
   "license": "MIT",
