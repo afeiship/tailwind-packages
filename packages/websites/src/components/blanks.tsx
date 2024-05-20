@@ -18,7 +18,7 @@ export default () => {
         <li>此两者，同出而异名，同谓之玄，玄之又玄，众妙之门。</li>
       </ul>
       <h3>Blanks-b-[1,2,3,10]</h3>
-      <div className="debug-blue blanks-b-[1,2,3,10]">
+      <div className="debug-blue *:bg-gray-50 blanks-b-[1,2,3,10]">
         <p>天下皆知美之为美，斯恶已，皆知善之为善，斯不善已。</p>
         <p>故有无相生，难易相成，长短相形，高下相倾，音声相和，前后相随。</p>
         <p>
@@ -27,7 +27,7 @@ export default () => {
         <p>夫惟弗居，是以不去。</p>
       </div>
       <h3>Blanks-px-b-[1,2,3,10]</h3>
-      <div className="debug-blue blanks-px-b-[1,2,3,10]">
+      <div className="debug-blue *:bg-gray-50 blanks-px-b-[1,2,3,10]">
         <p>天下皆知美之为美，斯恶已，皆知善之为善，斯不善已。</p>
         <p>故有无相生，难易相成，长短相形，高下相倾，音声相和，前后相随。</p>
         <p>
