@@ -2,7 +2,9 @@
   "name": "tailwind-plugins",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": [
+      "packages/*"
+    ]
   },
   "scripts": {
     "dev": "yarn --cwd packages/websites dev",
@@ -17,5 +19,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/afeiship/tailwind-plugins.git"
+  },
+  "prettier": "@jswork/style-guide/prettier",
+  "devDependencies": {
+    "@jswork/style-guide": "^1.0.2",
+    "prettier": "^3.2.5"
   }
 }

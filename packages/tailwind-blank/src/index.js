@@ -8,28 +8,28 @@ const generateBlanks = (value, callback) => {
   return result;
 };
 
-module.exports = plugin(function({ matchUtilities, theme }) {
+module.exports = plugin(function ({ matchUtilities, theme }) {
   matchUtilities(
     {
       '[class*="blank-"]': {
         fontSize: 0,
         lineHeight: 0,
-        clean: 'both'
+        clean: 'both',
       },
       'blank-x': (value) => ({
-        width: value
+        width: value,
       }),
       'blank-y': (value) => ({
-        height: value
+        height: value,
       }),
       'blank-px-x': (value) => ({
-        width: parseFloat(value) / 16 + 'rem'
+        width: parseFloat(value) * 0.25 + 'rem',
       }),
       'blank-px-y': (value) => ({
-        height: parseFloat(value) / 16 + 'rem'
-      })
+        height: parseFloat(value) * 0.25 + 'rem',
+      }),
     },
-    { values: theme('spacing') }
+    { values: theme('spacing') },
   );
 
   matchUtilities(
@@ -59,8 +59,8 @@ module.exports = plugin(function({ matchUtilities, theme }) {
       },
       'blanks-px-b': (value) => {
         return generateBlanks(value, (val) => ({ marginBottom: `${val / 16}rem` }));
-      }
+      },
     },
-    { values: theme('spacing') }
+    { values: theme('spacing') },
   );
 });
