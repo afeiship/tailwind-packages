@@ -10,14 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@jswork/wsui-shorty": "^1.1.1",
+    "@jswork/wsui-shorty": "^1.2.3",
     "@tanstack/react-router": "^1.33.4",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@jswork/presets-tailwind": "^1.0.55",
+    "@jswork/presets-tailwind": "^1.0.60",
     "@tanstack/router-devtools": "^1.33.4",
     "@tanstack/router-vite-plugin": "^1.32.17",
     "@types/react": "^18.2.43",

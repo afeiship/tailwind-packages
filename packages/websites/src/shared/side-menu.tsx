@@ -20,8 +20,9 @@ const Anonymous = (props: IProps) => {
     <div className={cx('w-60 min-h-screen bg-slate-200 border-r-2 border-gray-300', className)} {...rest}>
       {
         items.map((item, index) => (
-          <Link className="block p-[2_4] bg-sky-100 hover:bg-sky-200 text-gray-500 hover:text-gray-900"
-                key={index} {...item}>
+          <Link
+            className="block padding-[3,5] bg-sky-100 hover:bg-sky-200 text-gray-500 hover:text-gray-900 [&.active]:bg-slate-500 [&.active]:text-white"
+            key={index} {...item}>
             {item.children}
           </Link>
         ))
