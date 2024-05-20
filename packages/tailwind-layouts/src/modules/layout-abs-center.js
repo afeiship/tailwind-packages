@@ -5,16 +5,25 @@
  * @param pluginApi
  * @returns {*}
  */
-module.exports = function (pluginApi) {
-  const { addComponents } = pluginApi
+const baseStyles = {
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0
+};
 
+module.exports = function(pluginApi) {
+  const { addBase, addComponents } = pluginApi;
+  addBase({ '[class^="layout-abs-center"]': { ...baseStyles } });
   return addComponents({
     '.layout-abs-center': {
-      margin: 'auto',
-      top: '0',
-      right: '0',
-      bottom: '0',
-      left: '0',
+      margin: 'auto'
     },
-  })
-}
+    '.layout-abs-center-x': {
+      margin: '0 auto'
+    },
+    '.layout-abs-center-y': {
+      margin: 'auto 0'
+    }
+  });
+};

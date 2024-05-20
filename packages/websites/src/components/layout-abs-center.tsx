@@ -6,9 +6,11 @@
 
 export default () => {
   return (
-    <div className="debug-red relative block size-80">
+    <div className="debug-red relative block *:fcc size-80">
       <h1>Layout Absolute Center</h1>
-      <div className="layout-abs-center absolute size-12 rounded bg-amber-300"></div>
+      <div className="layout-abs-center absolute size-12 rounded bg-amber-300">XY</div>
+      <div className="layout-abs-center-x absolute size-12 rounded bg-amber-400">X</div>
+      <div className="layout-abs-center-y absolute size-12 rounded bg-amber-400">Y</div>
     </div>
   );
 };
