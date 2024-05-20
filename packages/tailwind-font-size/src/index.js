@@ -8,7 +8,7 @@ module.exports = plugin(function({ matchUtilities, theme }) {
       }),
       'f-px': (value) => {
         return {
-          fontSize: parseInt(value) * 0.25 + 'rem'
+          fontSize: parseFloat(value) * 0.25 + 'rem'
         };
       }
     },
