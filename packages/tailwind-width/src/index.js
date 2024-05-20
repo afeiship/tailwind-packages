@@ -19,10 +19,7 @@ module.exports = plugin(
         },
         'wh-px': (value) => {
           const val = value.split(',');
-          console.log('val: ', val);
           const [width, height] = val.map((v) => `${v / 16}rem`);
-          console.log('width: ', width);
-          console.log('height: ', height);
           return { width, height };
         }
       },
