@@ -14,6 +14,7 @@ import FontSize from './components/font-size';
 import Fw from './components/fw';
 import Padding from './components/padding';
 import Margin from './components/margin';
+import Wh from './components/wh';
 
 function App() {
   return (
@@ -67,6 +68,8 @@ function App() {
       <Padding />
       <hr />
       <Margin />
+      <hr />
+      <Wh />
     </div>
   );
 }

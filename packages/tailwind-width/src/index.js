@@ -1,20 +1,33 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 
 module.exports = plugin(
-  function ({ matchUtilities, theme }) {
-    const values = theme('widths')
+  function({ matchUtilities, theme }) {
+    const values = theme('widths');
 
     matchUtilities(
       {
         wp: (value) => ({
-          width: `${value * 10}%`,
+          width: `${value * 10}%`
         }),
         w1: (value) => ({
-          width: `${100 / value}%`,
+          width: `${100 / value}%`
         }),
+        wh: (value) => {
+          const val = value.split(',');
+          const [width, height] = val.map((v) => `${v / 4}rem`);
+          return { width, height };
+        },
+        'wh-px': (value) => {
+          const val = value.split(',');
+          console.log('val: ', val);
+          const [width, height] = val.map((v) => `${v / 16}rem`);
+          console.log('width: ', width);
+          console.log('height: ', height);
+          return { width, height };
+        }
       },
       { values }
-    )
+    );
   },
   {
     theme: {
@@ -28,8 +41,8 @@ module.exports = plugin(
         7: '7',
         8: '8',
         9: '9',
-        10: '10',
-      },
-    },
+        10: '10'
+      }
+    }
   }
-)
+);
