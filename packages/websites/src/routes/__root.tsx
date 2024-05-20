@@ -1,19 +1,20 @@
-import { createRootRoute, Link, Outlet } from '@tanstack/react-router';
+import { createRootRoute, Outlet } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
+import SideMenu from '../shared/side-menu';
 
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div className="p-2 flex gap-2">
-        <Link to="/" className="[&.active]:font-bold">
-          Home
-        </Link>{' '}
-        <Link to="/about" className="[&.active]:font-bold">
-          About
-        </Link>
+      <div className="x layout-flex-sa">
+        <SideMenu items={[
+          { children: 'Home', to: '/' },
+          { children: 'About', to: '/about' }
+        ]}
+        />
+        <div className="content">
+          <Outlet />
+        </div>
       </div>
-      <hr />
-      <Outlet />
       <TanStackRouterDevtools />
     </>
   )

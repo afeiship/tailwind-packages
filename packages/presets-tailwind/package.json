@@ -25,6 +25,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
+    "@jswork/taiiwind-padding": "^1.0.0",
     "@jswork/tailwind-blank": "^1.0.10",
     "@jswork/tailwind-font-size": "^1.0.9",
     "@jswork/tailwind-font-weight": "^1.0.1",
@@ -32,6 +33,7 @@
     "@jswork/tailwind-layouts": "^1.0.20",
     "@jswork/tailwind-lc": "^1.0.5",
     "@jswork/tailwind-line-height": "^1.0.2",
+    "@jswork/tailwind-margin": "^1.0.0",
     "@jswork/tailwind-shortcuts": "^1.0.22",
     "@jswork/tailwind-width": "^1.0.5"
   },

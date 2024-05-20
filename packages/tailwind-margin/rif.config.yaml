@@ -1,0 +1,12 @@
+name: replace-in-files
+files:
+  - 'src/**/*.js'
+  - '.*'
+  - '*'
+  - '!node_modules'
+  - '!rif.config.yaml'
+replacements:
+  - from: /tailwind-plugin-description/g
+    to: Tailwind plugin for margin.
+  - from: /tailwind-plugin/g
+    to: ${PROJECT_NAME}

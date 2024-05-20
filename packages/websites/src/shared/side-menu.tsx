@@ -6,24 +6,23 @@
 
 import { HTMLAttributes } from 'react';
 import cx from 'classnames';
-import { Link } from '@tanstack/react-router';
+import { Link, LinkProps } from '@tanstack/react-router';
 
 type IProps = {
   className?: string;
-  items: any[];
+  items: LinkProps[];
 } & HTMLAttributes<HTMLDivElement>;
 
 const Anonymous = (props: IProps) => {
   const { className, items, ...rest } = props;
 
   return (
-    <div className={cx(className)} {...rest}>
+    <div className={cx('w-60 min-h-screen bg-slate-200 border-r-2 border-gray-300', className)} {...rest}>
       {
         items.map((item, index) => (
-          <Link key={index} href={item.href}>
-            <a className="block py-2 text-sm text-gray-700 hover:bg-gray-100">
-              {item.label}
-            </a>
+          <Link className="block p-[2_4] bg-sky-100 hover:bg-sky-200 text-gray-500 hover:text-gray-900"
+                key={index} {...item}>
+            {item.children}
           </Link>
         ))
       }

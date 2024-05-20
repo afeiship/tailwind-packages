@@ -12,10 +12,12 @@ import Blanks from './components/blanks';
 import FullSpacings from './components/full-spacings';
 import FontSize from './components/font-size';
 import Fw from './components/fw';
+import Padding from './components/padding';
+import Margin from './components/margin';
 
 function App() {
   return (
-    <div className="mx-auto mt-20 y bg-gray-200 p-10">
+    <div className="mx-auto y bg-gray-200 p-10">
       <h1 className="text-2xl">Hello World</h1>
       <p className="z1">
         App<sup className="f8 z2">1.0.0</sup>
@@ -59,8 +61,12 @@ function App() {
       <FullSpacings />
       <hr />
       <FontSize />
-      <hr/>
+      <hr />
       <Fw />
+      <hr />
+      <Padding />
+      <hr />
+      <Margin />
     </div>
   );
 }

@@ -10,6 +10,7 @@ const nxPresets = () => {
       }
     },
     plugins: [
+      require('@jswork/taiiwind-padding'),
       require('@jswork/tailwind-blank'),
       require('@jswork/tailwind-font-size'),
       require('@jswork/tailwind-font-weight'),
@@ -17,6 +18,7 @@ const nxPresets = () => {
       require('@jswork/tailwind-layouts'),
       require('@jswork/tailwind-lc'),
       require('@jswork/tailwind-line-height'),
+      require('@jswork/tailwind-margin'),
       require('@jswork/tailwind-shortcuts'),
       require('@jswork/tailwind-width')
     ]
