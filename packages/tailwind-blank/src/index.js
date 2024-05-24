@@ -11,7 +11,7 @@ const generateBlanks = (value, callback) => {
 const baseBlankStyles = {
   fontSize: 0,
   lineHeight: 0,
-  clean: 'both',
+  clear: 'both',
 };
 
 module.exports = plugin(function ({ addBase, matchUtilities, theme }) {
