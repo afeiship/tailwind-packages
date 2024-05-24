@@ -1,6 +1,6 @@
 import { generateSpacings } from './utils';
 
-const spacing = generateSpacings(1, 100);
+const spacing = generateSpacings(1, 100, 0.5);
 
 const nxPresets = () => {
   return {
