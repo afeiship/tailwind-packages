@@ -1,21 +1,21 @@
-const plugin = require('tailwindcss/plugin');
+const defaults = {
+  1: '1',
+  2: '2',
+  3: '3',
+  4: '4',
+  5: '5',
+  6: '6',
+  7: '7',
+  8: '8',
+  9: '9',
+  10: '10',
+  11: '11',
+  12: '12'
+};
 
 module.exports = function(pluginApi) {
-  const { addBase, addComponents, matchUtilities, theme } = pluginApi;
-  const values = theme('justifyItems', {
-    1: '1',
-    2: '2',
-    3: '3',
-    4: '4',
-    5: '5',
-    6: '6',
-    7: '7',
-    8: '8',
-    9: '9',
-    10: '10',
-    11: '11',
-    12: '12'
-  });
+  const { addBase, matchUtilities, theme } = pluginApi;
+  const values = theme('justifyItems', defaults);
 
   addBase({
     '[class^="layout-em-justify-list"]': {
@@ -33,7 +33,6 @@ module.exports = function(pluginApi) {
   matchUtilities(
     {
       'layout-em-justify-list': (value) => {
-        // add .is-item class to children
         return {
           '> .is-item': {
             'width': `calc(${(100 / value)}% - 1em)`
