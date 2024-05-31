@@ -15,6 +15,7 @@ import Fw from './components/fw';
 import Padding from './components/padding';
 import Margin from './components/margin';
 import Wh from './components/wh';
+import LayoutEmJustifyList from './components/layout-em-justify-list';
 
 function App() {
   return (
@@ -70,6 +71,8 @@ function App() {
       <Margin />
       <hr />
       <Wh />
+      <hr />
+      <LayoutEmJustifyList />
     </div>
   );
 }
