@@ -20,6 +20,32 @@ export default () => {
         <div className="is-item">4</div>
         <div className="is-item">5</div>
       </div>
+
+      <div className="layout-float-list-[6,5] debug-red wp-4 mx-auto *:bg-red-200 *:fcc *:mb-4">
+        <div className="is-item">1</div>
+        <div className="is-item">2</div>
+        <div className="is-item">3</div>
+        <div className="is-item">4</div>
+        <div className="is-item">5</div>
+        <div className="is-item">6</div>
+        <div className="is-item">7</div>
+        <div className="is-item">8</div>
+        <div className="is-item">9</div>
+        <div className="is-item">10</div>
+      </div>
+
+      <div className="layout-float-list-[9,5] debug-red wp-4 mx-auto *:bg-red-200 *:fcc *:mb-4">
+        <div className="is-item">1</div>
+        <div className="is-item">2</div>
+        <div className="is-item">3</div>
+        <div className="is-item">4</div>
+        <div className="is-item">5</div>
+        <div className="is-item">6</div>
+        <div className="is-item">7</div>
+        <div className="is-item">8</div>
+        <div className="is-item">9</div>
+        <div className="is-item">10</div>
+      </div>
     </div>
   );
 };

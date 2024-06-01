@@ -3,13 +3,6 @@ const val = (value) => {
   return value?.includes('px') ? value : `${value / 4}rem`;
 };
 
-const compact = (obj) => {
-  return Object.entries(obj).reduce((acc, [key, value]) => {
-    if (value) acc[key] = value;
-    return acc;
-  }, {});
-};
-
 module.exports = function(pluginApi) {
   const { addBase, matchComponents } = pluginApi;
 
@@ -30,6 +23,11 @@ module.exports = function(pluginApi) {
         marginLeft: xValue,
         width: `calc((100% - ${xValue} - ${n} * ${xValue})/${n})`
       };
+
+      // last row to margin-bottom: 0
+      const first = `&>*:nth-child(${n}n + 1):nth-last-child(-n + ${n})`;
+      const selectorName = `${first},${first} ~ *`;
+      result[selectorName] = { marginBottom: 0 };
       return result;
     }
   });
