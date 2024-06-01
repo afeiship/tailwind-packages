@@ -7,6 +7,7 @@ const moduleTransCenter = require('./modules/layout-trans-center');
 const moduleLayoutTextJustify = require('./modules/layout-text-justify');
 const moduleLayoutFlex = require('./modules/layout-flex');
 const moduleLayoutFlexList = require('./modules/layout-flex-list');
+const moduleLayoutFloatList = require('./modules/layout-float-list');
 
 module.exports = plugin(function(pluginApi) {
   // Add custom utilities here
@@ -18,4 +19,5 @@ module.exports = plugin(function(pluginApi) {
   moduleLayoutTextJustify(pluginApi);
   moduleLayoutFlex(pluginApi);
   moduleLayoutFlexList(pluginApi);
+  moduleLayoutFloatList(pluginApi);
 });

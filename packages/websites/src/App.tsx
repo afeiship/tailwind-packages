@@ -17,10 +17,13 @@ import Margin from './components/margin';
 import Wh from './components/wh';
 import LayoutTextJustify from './components/layout-text-justify';
 import LayoutFlexJustify from './components/layout-flex-justify';
+import LayoutFloatJustify from './components/layout-float-justify';
 
 function App() {
   return (
     <div className="mx-auto y bg-gray-200 p-10">
+      <LayoutFloatJustify />
+      <hr />
       <LayoutTextJustify />
       <hr />
       <LayoutFlexJustify />

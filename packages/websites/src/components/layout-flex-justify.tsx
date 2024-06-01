@@ -1,7 +1,7 @@
 /**
  * @email: aric.zheng@alo7.com
  * @description: A React page component.
- * @updated_at: 2024-05-20 22:44:03
+ * @updated_at: 2024-06-01 17:48:38
  */
 
 export default () => {
