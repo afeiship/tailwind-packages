@@ -13,7 +13,7 @@ export default () => {
         <div className="is-item">2</div>
       </div>
 
-      <div className="layout-float-list-[3,5] debug-red wp-4 mx-auto *:bg-red-200 *:fcc *:mb-4">
+      <div className="layout-float-list-[3,5,2] debug-red wp-4 mx-auto *:bg-red-200 *:fcc">
         <div className="is-item">1</div>
         <div className="is-item">2</div>
         <div className="is-item">3</div>
@@ -21,7 +21,7 @@ export default () => {
         <div className="is-item">5</div>
       </div>
 
-      <div className="layout-float-list-[6,5] debug-red wp-4 mx-auto *:bg-red-200 *:fcc *:mb-4">
+      <div className="layout-float-list-[6,5,1] debug-red wp-4 mx-auto *:bg-red-200 *:fcc">
         <div className="is-item">1</div>
         <div className="is-item">2</div>
         <div className="is-item">3</div>
@@ -34,7 +34,7 @@ export default () => {
         <div className="is-item">10</div>
       </div>
 
-      <div className="layout-float-list-[9,5] debug-red wp-4 mx-auto *:bg-red-200 *:fcc *:mb-4">
+      <div className="layout-float-list-[9,5,3] debug-red wp-4 mx-auto *:bg-red-200 *:fcc">
         <div className="is-item">1</div>
         <div className="is-item">2</div>
         <div className="is-item">3</div>

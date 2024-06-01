@@ -16,11 +16,13 @@ module.exports = function(pluginApi) {
   // .layout-float-list-[2,2]
   matchComponents({
     'layout-float-list': (value) => {
-      const [n, x] = value.split(',');
+      const [n, x, y] = value.split(',');
       const xValue = val(x);
+      const yValue = val(y);
       const result = {};
       result['> *'] = {
         marginLeft: xValue,
+        marginBottom: yValue,
         width: `calc((100% - ${xValue} - ${n} * ${xValue})/${n})`
       };
 
