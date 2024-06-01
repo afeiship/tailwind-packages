@@ -15,15 +15,13 @@ import Fw from './components/fw';
 import Padding from './components/padding';
 import Margin from './components/margin';
 import Wh from './components/wh';
-import LayoutEmJustifyList from './components/layout-em-justify-list';
+import LayoutTextJustify from './components/layout-text-justify';
 
 function App() {
   return (
     <div className="mx-auto y bg-gray-200 p-10">
-      <h1 className="text-2xl">Hello World</h1>
-      <p className="z1">
-        App<sup className="f8 z2">1.0.0</sup>
-      </p>
+      <LayoutTextJustify />
+      <hr />
       <GridList>
         <div className="grid-item">item1</div>
         <div className="grid-item">item1</div>
@@ -71,8 +69,6 @@ function App() {
       <Margin />
       <hr />
       <Wh />
-      <hr />
-      <LayoutEmJustifyList />
     </div>
   );
 }
