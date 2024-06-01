@@ -6,6 +6,7 @@ const moduleLayoutStickyFooter = require('./modules/layout-sticky-footer');
 const moduleTransCenter = require('./modules/layout-trans-center');
 const moduleLayoutTextJustify = require('./modules/layout-text-justify');
 const moduleLayoutFlex = require('./modules/layout-flex');
+const moduleLayoutFlexList = require('./modules/layout-flex-list');
 
 module.exports = plugin(function(pluginApi) {
   // Add custom utilities here
@@ -16,4 +17,5 @@ module.exports = plugin(function(pluginApi) {
   moduleTransCenter(pluginApi);
   moduleLayoutTextJustify(pluginApi);
   moduleLayoutFlex(pluginApi);
+  moduleLayoutFlexList(pluginApi);
 });

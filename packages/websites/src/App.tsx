@@ -16,11 +16,14 @@ import Padding from './components/padding';
 import Margin from './components/margin';
 import Wh from './components/wh';
 import LayoutTextJustify from './components/layout-text-justify';
+import LayoutFlexJustify from './components/layout-flex-justify';
 
 function App() {
   return (
     <div className="mx-auto y bg-gray-200 p-10">
       <LayoutTextJustify />
+      <hr />
+      <LayoutFlexJustify />
       <hr />
       <GridList>
         <div className="grid-item">item1</div>
