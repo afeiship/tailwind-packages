@@ -1,0 +1,8 @@
+{
+  "label": "Tailwind Blank",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Tailwind plugin for generating a blank HTML file with Tailwind CSS pre-installed."
+  }
+}

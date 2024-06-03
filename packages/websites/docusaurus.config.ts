@@ -74,9 +74,16 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula
+    },
+    liveCodeBlock: {
+      /**
+       * The position of the live playground, above or under the editor
+       * Possible values: "top" | "bottom"
+       */
+      playgroundPosition: 'bottom'
     }
   } satisfies Preset.ThemeConfig,
-  plugins: [tailwindPlugin]
+  plugins: [tailwindPlugin, '@docusaurus/theme-live-codeblock']
 };
 
 export default config;
