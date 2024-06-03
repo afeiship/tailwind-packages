@@ -8,16 +8,13 @@ const config: Config = {
   tagline: 'Tailwind CSS packages.',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  url: 'https://github.com/',
+  baseUrl: '/tailwind-packages/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'jswork', // Usually your GitHub org/user name.
+  projectName: 'tailwind-packages', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -80,7 +77,7 @@ const config: Config = {
        * The position of the live playground, above or under the editor
        * Possible values: "top" | "bottom"
        */
-      playgroundPosition: 'bottom'
+      playgroundPosition: 'top',
     }
   } satisfies Preset.ThemeConfig,
   plugins: [tailwindPlugin, '@docusaurus/theme-live-codeblock']
