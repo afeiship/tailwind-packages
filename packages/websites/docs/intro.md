@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Tailwind CSS
+# Modules
 - preset-tailwind
 - tailwind-blank
 - tailwind-font-size
@@ -15,6 +15,8 @@ sidebar_position: 1
 - tailwind-width
 
 ## Installation
+> Install tailwind preset package.
+
 ```shell
 yarn add @jswork/preset-tailwind
 ```
