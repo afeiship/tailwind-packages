@@ -1,15 +1,11 @@
-import twPresets from '@jswork/presets-tailwind';
+import jswPresets from '@jswork/presets-tailwind';
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  presets: [twPresets],
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-    './src/*.{js,ts,jsx,tsx}'
-  ],
+  presets: [jswPresets()],
+  content: ["./src/**/*.{js,jsx,ts,tsx,md,mdx}", "./docs/**/*.{md,mdx}"],
   theme: {
     extend: {}
   },
-  plugins: []
+  plugins: ['prettier-plugin-tailwindcss']
 };

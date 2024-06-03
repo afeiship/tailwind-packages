@@ -1,0 +1,12 @@
+name: replace-in-files
+files:
+  - 'src/**/*.js'
+  - '.*'
+  - '*'
+  - '!node_modules'
+  - '!rif.config.yaml'
+replacements:
+  - from: /docusaurus-docs-description/g
+    to: Documentation for ${PROJECT_NAME}.
+  - from: /docusaurus-docs/g
+    to: ${PROJECT_NAME}
