@@ -4,11 +4,11 @@ const val = (value) => {
 };
 
 module.exports = function(pluginApi) {
-  const { addBase, matchComponents } = pluginApi;
+  const { addComponents, matchComponents } = pluginApi;
 
-  addBase({
-    '[class^="layout-float-list"]': { overflow: 'hidden' },
-    '[class^="layout-float-list"] > *': { float: 'left', boxSizing: 'border-box' }
+  addComponents({
+    '[class*="layout-float-list"]': { overflow: 'hidden' },
+    '[class*="layout-float-list"] > *': { float: 'left', boxSizing: 'border-box' }
   });
 
   // list - 2/3/4/5/6/7/8/9/10/11/12

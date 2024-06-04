@@ -13,8 +13,8 @@ const baseStyles = {
 };
 
 module.exports = function(pluginApi) {
-  const { addBase, addComponents } = pluginApi;
-  addBase({ '[class^="layout-abs-center"]': { ...baseStyles } });
+  const { addComponents } = pluginApi;
+  addComponents({ '[class*="layout-abs-center"]': { ...baseStyles } });
   return addComponents({
     '.layout-abs-center': {
       margin: 'auto'
