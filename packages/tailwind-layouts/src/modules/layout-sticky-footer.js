@@ -26,7 +26,6 @@ module.exports = function (pluginApi) {
         position: 'absolute',
         width: '100%',
         bottom: 0,
-        padding: 'inherit',
         height: 'var(--footer-height, 100px)',
       },
     },
