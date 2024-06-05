@@ -1,6 +1,5 @@
 // ref: https://github.com/afeiship/wsui-shorty
 const plugin = require('tailwindcss/plugin')
-const moduleBox = require('./modules/box')
 const moduleBoxSizing = require('./modules/box-sizing')
 const moduleCorner = require('./modules/corner')
 const moduleDebug = require('./modules/debug')
@@ -16,7 +15,6 @@ const moduleTransform = require('./modules/transform')
 const moduleZIndex = require('./modules/z-index')
 
 module.exports = plugin(function (pluginConfig) {
-  moduleBox(pluginConfig)
   moduleBoxSizing(pluginConfig)
   moduleCorner(pluginConfig)
   moduleDebug(pluginConfig)
