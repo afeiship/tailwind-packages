@@ -9,21 +9,21 @@ const baseStyles = {
 
 module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
-  addComponents('[class*="is-scrollable"]', baseStyles)
+  addComponents({ '[class*="is-scrollable"]': { ...baseStyles } })
 
   return addComponents({
     '.layout-abs-scrollable': {
       position: 'relative',
       height: '100%',
-      '.is-scrollable-xy': {
-        overflow: 'auto',
-      },
-      '.is-scrollable-x': {
-        overflowX: 'auto',
-      },
-      '.is-scrollable-y': {
-        overflowY: 'auto',
-      },
+    },
+    '.is-scrollable-xy': {
+      overflow: 'auto',
+    },
+    '.is-scrollable-x': {
+      overflowX: 'auto',
+    },
+    '.is-scrollable-y': {
+      overflowY: 'auto',
     },
   })
 }
