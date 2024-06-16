@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-border",
+  "name": "@jswork/tailwind-border",
   "version": "1.0.0",
   "description": "Tailwind plugin for shorthand border properties.",
   "main": "src/index.js",
