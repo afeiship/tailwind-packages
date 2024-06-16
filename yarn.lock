@@ -2686,6 +2686,11 @@
   resolved "https://registry.npmjs.org/@jswork/style-guide/-/style-guide-1.0.2.tgz#82a4b88b1255542e98e441e63795049bfba69e46"
   integrity sha512-FH8Mp4lw2znQ2HvPZ/KT3Gf49uRHyxr8JREin8zUgvOSOqaAqS21Tn4J8QqbG3UgwZ+yS/vZrcK5Wx1b/6rFRw==
 
+"@jswork/style-guide@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmmirror.com/@jswork/style-guide/-/style-guide-1.0.3.tgz#d4795e20b02245342663aca7174f06c1e6bafa3a"
+  integrity sha512-4PJmRJiwa/qLC/00CV7vLTOuiktKTnG7oWYiRKLMlR2dasixB8HnZFEVgrdmh0VX7fsgcTovJScAHlzkZOw/eg==
+
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.5"
   resolved "https://registry.npmmirror.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.5.tgz#4fc56c15c580b9adb7dc3c333a134e540b44bfb1"
