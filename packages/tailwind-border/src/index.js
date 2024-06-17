@@ -1,22 +1,22 @@
 const plugin = require('tailwindcss/plugin');
 
-const generateColors = (e, colors, prefix, style) => {
+const generateColors = (colors, prefix, style) => {
   return Object.keys(colors).reduce((acc, key) => {
     if (typeof colors[key] === 'string') {
       return {
         ...acc,
-        [`${prefix}-${e(key)}`]: {
+        [`${prefix}-${(key)}`]: {
           'border': `${style} ${colors[key]}`
         }
       };
     }
 
-    const genColors = generateColors(e, colors[key], `${prefix}-${(key)}`, style);
+    const genColors = generateColors(colors[key], `${prefix}-${(key)}`, style);
     return { ...acc, ...genColors };
   }, {});
 };
 
-module.exports = plugin(function({ addComponents, theme, e }) {
+module.exports = plugin(function({ addComponents, theme}) {
   const colors = theme('colors');
   const kvs = [
     { key: 'bds', value: 'solid' },
@@ -26,7 +26,7 @@ module.exports = plugin(function({ addComponents, theme, e }) {
   ];
 
   kvs.forEach(({ key, value }) => {
-    const components = generateColors(e, colors, `.${key}`, value);
+    const components = generateColors(colors, `.${key}`, value);
     addComponents(components);
   });
 });
