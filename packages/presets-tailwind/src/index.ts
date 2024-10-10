@@ -21,7 +21,7 @@ const nxPresets = () => {
       require('@jswork/tailwind-margin'),
       require('@jswork/tailwind-padding'),
       require('@jswork/tailwind-shortcuts'),
-      require('@jswork/tailwind-width')
+      require('@jswork/tailwind-width'),
     ]
   };
 };
