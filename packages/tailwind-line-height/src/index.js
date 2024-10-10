@@ -3,6 +3,10 @@ const plugin = require('tailwindcss/plugin')
 module.exports = plugin(function ({ matchUtilities, theme }) {
   matchUtilities(
     {
+      'hlh': (value) => ({
+        lineHeight: value,
+        height: value,
+      }),
       'lh': (value) => ({
         lineHeight: value,
       }),
