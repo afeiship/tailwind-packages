@@ -9,13 +9,15 @@ module.exports = plugin(function ({ matchUtilities, theme }) {
       'lh-px': (value) => ({
         lineHeight: `${parseFloat(value) / 4}rem`,
       }),
-      // percetage line height
+      // percentage line height
+      // lhp-1.5 = line height: 150%;
       'lhp': (value) => ({
-        lineHeight: `${value}%`,
+        lineHeight: `${(100 * parseFloat(value)) / 4}%`,
       }),
       // number(unitless) line height
+      // lhn-1.5 = line height: 1.5;
       'lhn': (value) => ({
-        lineHeight: value,
+        lineHeight: `${parseFloat(value) / 4}`,
       }),
     },
     { values: theme('spacing') }
