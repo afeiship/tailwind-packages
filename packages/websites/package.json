@@ -29,7 +29,7 @@
     "@docusaurus/theme-live-codeblock": "^3.4.0",
     "@docusaurus/tsconfig": "^3.4.0",
     "@docusaurus/types": "^3.4.0",
-    "@jswork/presets-tailwind": "^1.1.6",
+    "@jswork/presets-tailwind": "file:../presets-tailwind",
     "@jswork/style-guide": "^1.0.3",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
