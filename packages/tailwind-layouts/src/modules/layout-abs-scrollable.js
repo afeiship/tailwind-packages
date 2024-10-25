@@ -20,10 +20,10 @@ module.exports = function (pluginApi) {
       overflow: 'auto',
     },
     '.is-scrollable-x': {
-      overflowX: 'auto hidden',
+      overflow: 'auto hidden',
     },
     '.is-scrollable-y': {
-      overflowY: 'hidden auto',
+      overflow: 'hidden auto',
     },
   })
 }
