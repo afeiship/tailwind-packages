@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-line-height",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "tailwind-line-height-description",
   "main": "src/index.js",
   "license": "MIT",
