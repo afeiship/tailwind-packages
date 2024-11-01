@@ -15,7 +15,7 @@ module.exports = plugin(
   {
     variants: {
       extend: {
-        fontWeight: ['responsive'],
+        fontWeight: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
       },
     },
   },
