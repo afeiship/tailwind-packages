@@ -1,8 +1,8 @@
 const plugin = require('tailwindcss/plugin');
 
-module.exports = plugin(function ({ addUtilities, theme }) {
-  addUtilities(
-    () => {
+module.exports = plugin(
+  function ({ addUtilities, theme }) {
+    addUtilities(() => {
       let utilities = {};
       for (let i = 1; i <= 9; i++) {
         utilities[`.fw-${i}`] = {
@@ -10,9 +10,13 @@ module.exports = plugin(function ({ addUtilities, theme }) {
         };
       }
       return utilities;
+    });
+  },
+  {
+    variants: {
+      extend: {
+        fontWeight: ['responsive'],
+      },
     },
-    {
-      variants: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-    },
-  );
-});
+  },
+);
