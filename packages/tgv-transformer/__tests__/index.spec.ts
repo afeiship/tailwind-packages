@@ -8,4 +8,9 @@ describe('api.basic', () => {
     expect(result2).toBe('absolute desktop:lh-5.5 desktop:right-15 desktop:bottom-3 mobile:lh-3 mobile:right-5.5 mobile:bottom-1');
   });
 
+  test('02 - Test tgv with comas', () => {
+    const result = tgv`absolute desktop:(lh-5.5,right-15,bottom-3) mobile:(lh-3,right-5.5,bottom-1)`;
+    expect(result).toBe('absolute desktop:lh-5.5 desktop:right-15 desktop:bottom-3 mobile:lh-3 mobile:right-5.5 mobile:bottom-1');
+  });
+
 });

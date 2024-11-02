@@ -1,5 +1,6 @@
 const variantGroupsRegex = /([a-z\-0-9:]+:)\((.*?)\)/g;
 const breakpointRegex = /(\w+):\(([^)]+)\)/g;
+const splitRegex = /[ ,]+/g;
 
 function tgv(input: TemplateStringsArray, ...args: any[]) {
   // Get the raw string input
@@ -7,7 +8,9 @@ function tgv(input: TemplateStringsArray, ...args: any[]) {
   // Transform the input string
   return rawInput
     .replace(breakpointRegex, (_, breakpoint, styles) => {
-      const stylesArray = styles.split(' ').map((style: string) => `${breakpoint}:${style.trim()}`);
+      const stylesArray = styles
+        .split(splitRegex)
+        .map((style: string) => `${breakpoint}:${style.trim()}`);
       return stylesArray.join(' ');
     })
     .trim();
@@ -17,7 +20,7 @@ function twTransform(code: any) {
   const variantGroupMatches = [...code.matchAll(variantGroupsRegex)];
   variantGroupMatches.forEach(([matchStr, variants, classes]) => {
     const parsedClasses = classes
-      .split(' ')
+      .split(splitRegex)
       .map((cls) => variants + cls)
       .join(' ');
 
