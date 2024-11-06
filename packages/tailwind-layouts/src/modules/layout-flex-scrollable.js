@@ -3,12 +3,7 @@ module.exports = function (pluginApi) {
   return addComponents({
     '.layout-flex-scrollable': {
       display: 'flex',
-      '&.is-x': {
-        flexDirection: 'row',
-      },
-      '&.is-y': {
-        flexDirection: 'column',
-      },
+      flexDirection: 'column',
       '.is-flex-scrollable-y': {
         flex: 1,
         overflow: 'hidden scroll',
