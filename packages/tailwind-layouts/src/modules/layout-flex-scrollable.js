@@ -1,6 +1,6 @@
 module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
-  addComponents({
+  return addComponents({
     '.layout-flex-scrollable': { display: 'flex', flexDirection: 'column', height: '100%' },
     '.is-flex-scrollable-y': {
       flex: 1,
