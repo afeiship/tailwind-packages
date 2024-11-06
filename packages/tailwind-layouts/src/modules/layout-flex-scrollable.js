@@ -1,18 +1,21 @@
 module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
+  addComponents({
+    '[class*="is-flex-scrollable"]': {
+      flex: 1,
+      overscrollBehavior: 'contain',
+    },
+  })
+
   return addComponents({
     '.layout-flex-scrollable': {
       display: 'flex',
       flexDirection: 'column',
       '.is-flex-scrollable-y': {
-        flex: 1,
         overflow: 'hidden scroll',
-        overscrollBehavior: 'contain',
       },
       '.is-flex-scrollable-x': {
-        flex: 1,
-        overflow: 'hidden scroll',
-        overscrollBehavior: 'contain',
+        overflow: 'scroll hidden',
       },
     },
   })
