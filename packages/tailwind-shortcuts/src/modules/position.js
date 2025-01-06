@@ -103,21 +103,21 @@ module.exports = function(pluginConfig) {
       left: 0,
       bottom: 0
     },
-    'abs-center': {
+    '.abs-center': {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)'
     },
-    'abs-gold-center': {
+    '.abs-gold-center': {
       top: '37.5%',
       left: '50%',
       transform: 'translate(-50%, -50%)'
     },
-    'sticky-top': {
+    '.sticky-top': {
       position: 'sticky',
       top: 0
     },
-    'sticky-bottom': {
+    '.sticky-bottom': {
       position: 'sticky',
       bottom: 0
     }
