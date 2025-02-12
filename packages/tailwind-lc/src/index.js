@@ -22,17 +22,6 @@ module.exports = plugin(
       },
       { values }
     );
-
-    addUtilities(
-      [
-        {
-          '.line-clamp-none': {
-            '-webkit-line-clamp': 'unset',
-          },
-        },
-      ],
-      variants('lineClamp')
-    );
   },
   {
     theme: {
