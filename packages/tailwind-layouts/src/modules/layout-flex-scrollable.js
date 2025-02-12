@@ -1,6 +1,6 @@
 module.exports = function (pluginApi) {
-  const { addComponents } = pluginApi
-  addComponents({
+  const { addBase, addComponents } = pluginApi
+  addBase({
     '[class*="is-flex-scrollable"]': {
       flex: 1,
       overscrollBehavior: 'contain',

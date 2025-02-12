@@ -8,8 +8,8 @@ const baseStyles = {
 }
 
 module.exports = function (pluginApi) {
-  const { addComponents } = pluginApi
-  addComponents({ '[class*="is-scrollable"]': { ...baseStyles } })
+  const { addComponents, addBase } = pluginApi
+  addBase({ '[class*="is-scrollable"]': { ...baseStyles } })
 
   return addComponents({
     '.layout-abs-scrollable': {

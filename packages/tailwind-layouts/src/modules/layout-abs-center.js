@@ -9,21 +9,22 @@ const baseStyles = {
   top: 0,
   left: 0,
   right: 0,
-  bottom: 0
-};
+  bottom: 0,
+}
 
-module.exports = function(pluginApi) {
-  const { addComponents } = pluginApi;
-  addComponents({ '[class*="layout-abs-center"]': { ...baseStyles } });
+module.exports = function (pluginApi) {
+  const { addComponents, addBase } = pluginApi
+  addBase({ '[class*="layout-abs-center"]': { ...baseStyles } })
+
   return addComponents({
     '.layout-abs-center': {
-      margin: 'auto'
+      margin: 'auto',
     },
     '.layout-abs-center-x': {
-      margin: '0 auto'
+      margin: '0 auto',
     },
     '.layout-abs-center-y': {
-      margin: 'auto 0'
-    }
-  });
-};
+      margin: 'auto 0',
+    },
+  })
+}

@@ -11,9 +11,9 @@ const compact = (obj) => {
 };
 
 module.exports = function(pluginApi) {
-  const { addComponents, matchComponents } = pluginApi;
+  const { addBase, matchComponents } = pluginApi;
 
-  addComponents({ '[class*="layout-flex-list"]': { display: 'flex', flexWrap: 'wrap' } });
+  addBase({ '[class*="layout-flex-list"]': { display: 'flex', flexWrap: 'wrap' } });
 
   // list - 2/3/4/5/6/7/8/9/10/11/12
   // .layout-flex-list-[columns,gap-x,gap-y]

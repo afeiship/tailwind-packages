@@ -4,9 +4,9 @@ const val = (value) => {
 };
 
 module.exports = function(pluginApi) {
-  const { addComponents, matchComponents } = pluginApi;
+  const { addBase, matchComponents } = pluginApi;
 
-  addComponents({
+  addBase({
     '[class*="layout-float-list"]': { overflow: 'hidden' },
     '[class*="layout-float-list"] > *': { float: 'left', boxSizing: 'border-box' }
   });
