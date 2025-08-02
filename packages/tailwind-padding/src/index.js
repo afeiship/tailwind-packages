@@ -17,6 +17,9 @@ module.exports = plugin(
         return {
           padding: tws.join(' ')
         };
+      },
+      'padding-inherit': {
+        padding: 'inherit'
       }
     });
   }
