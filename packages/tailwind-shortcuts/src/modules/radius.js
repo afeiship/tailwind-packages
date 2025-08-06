@@ -1,5 +1,5 @@
 module.exports = function (pluginConfig) {
-  const { addComponents } = pluginConfig
+  const {addComponents} = pluginConfig
   return addComponents({
     '.radius-t0': {
       'border-top-left-radius': 0,
@@ -15,6 +15,9 @@ module.exports = function (pluginConfig) {
     '.radius-l0': {
       'border-bottom-left-radius': 0,
       'border-top-left-radius': 0,
+    },
+    '.radius-inherit': {
+      'border-radius': 'inherit',
     },
   })
 }
