@@ -52,8 +52,16 @@ module.exports = {
 例如，如果 `designWidth` 为 `390`，`baseFontSize` 为 `16`，则 `vw` 比例为 `(16 / 390) * 100 = 4.103vw`。最终生成的 CSS 可能是：
 
 ```css
+/* 默认：手机（基于 390px 设计稿） */
 :root {
-  font-size: clamp(16px, 4.103vw, 20px);
+  font-size: clamp(16px, 4.1vw, 20px); /* 390 × 4.1% ≈ 16px */
+}
+
+/* 平板及以上：使用 768px 为基准，1rem ≈ 18px */
+@media (min-width: 768px) {
+  :root {
+    font-size: clamp(18px, 2.34vw, 22px); /* 18 / 768 ≈ 0.0234 → 2.34vw */
+  }
 }
 ```
 
