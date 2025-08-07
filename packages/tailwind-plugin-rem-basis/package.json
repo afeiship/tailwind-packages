@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-plugin-rem-basis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Responsive rem scaling for design mockups.",
   "main": "src/index.js",
   "license": "MIT",
