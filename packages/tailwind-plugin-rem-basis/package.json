@@ -1,0 +1,21 @@
+{
+  "name": "@jswork/tailwind-plugin-rem-basis",
+  "version": "1.0.0",
+  "description": "Responsive rem scaling for design mockups.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "prettier": "@jswork/style-guide/prettier",
+  "devDependencies": {
+    "@jswork/style-guide": "^1.0.2",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.4",
+    "tailwindcss": "^3.4.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
