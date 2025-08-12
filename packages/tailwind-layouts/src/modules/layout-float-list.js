@@ -53,7 +53,7 @@ module.exports = function (pluginApi) {
 
         // 最后一行的所有元素：清除 marginBottom
         // 匹配最后 n 个元素
-        const lastRowSelector = `& > *:nth-last-child(-n + ${n}), & > *:nth-last-child(-n + ${n}) ~ *:nth-last-child(-n + ${n})`
+        // const lastRowSelector = `& > *:nth-last-child(-n + ${n}), & > *:nth-last-child(-n + ${n}) ~ *:nth-last-child(-n + ${n})`
         // 更简单写法：直接用 &:nth-last-child(-n + N)
         result['> *:nth-last-child(-n + ' + n + ')'] = {
           marginBottom: 0,
