@@ -1,6 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 const moduleLayoutAbsCenter = require('./modules/layout-abs-center')
 const moduleLayoutAbsScrollable = require('./modules/layout-abs-scrollable')
+const moduleLayoutFieldsetDivider = require('./modules/layout-fieldset-divider')
 const moduleLayoutInlineItems = require('./modules/layout-inline-items')
 const moduleLayoutStickyFooter = require('./modules/layout-sticky-footer')
 const moduleTransCenter = require('./modules/layout-trans-center')
@@ -14,6 +15,7 @@ module.exports = plugin(function (pluginApi) {
   // Add custom utilities here
   moduleLayoutAbsCenter(pluginApi)
   moduleLayoutAbsScrollable(pluginApi)
+  moduleLayoutFieldsetDivider(pluginApi)
   moduleLayoutInlineItems(pluginApi)
   moduleLayoutStickyFooter(pluginApi)
   moduleTransCenter(pluginApi)
