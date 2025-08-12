@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tgv-transformer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Tailwind group variant toolkits.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
