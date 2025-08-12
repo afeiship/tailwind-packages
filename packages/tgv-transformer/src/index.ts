@@ -5,7 +5,7 @@ const splitRegex = /[ ,]+/g;
 function tgv(input: TemplateStringsArray, ...args: any[]) {
   // Get the raw string input
   const rawInput = String.raw(input, ...args);
-  // Transform the input string
+
   return rawInput
     .replace(breakpointRegex, (_, breakpoint, styles) => {
       const stylesArray = styles
