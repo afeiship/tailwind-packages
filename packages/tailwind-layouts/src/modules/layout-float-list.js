@@ -1,4 +1,15 @@
 // @ref: https://chat.qwen.ai/c/b3aa92c3-38ab-4a6f-8f76-fd30a98fe3f1
+/**
+ * @example:
+<div class="layout-float-list-[3,20px,10px]">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+ */
 
 const val = (value) => {
   if (!value) return ''
