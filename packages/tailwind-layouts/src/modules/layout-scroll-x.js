@@ -25,6 +25,12 @@ module.exports = function (pluginApi) {
       '> *': {
         flexShrink: 0,
       },
+      '> :first-child': {
+        marginLeft: 'auto',
+      },
+      '> :last-child': {
+        marginRight: 'auto',
+      },
     },
   })
 }
