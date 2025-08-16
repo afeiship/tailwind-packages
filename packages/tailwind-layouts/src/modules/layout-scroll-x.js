@@ -1,4 +1,5 @@
 /**
+ * https://gist.github.com/supremeo/b66ef6e13aa13fb595600eff026d5d99
  * <nav class="layout-scroll-x">
  *   <a href="#1">日历最新版2024</a>
  *   <a href="#2">年的万年历全表日历安</a>
@@ -22,6 +23,13 @@ module.exports = function (pluginApi) {
       width: '100%',
       maxWidth: '100%',
       overflowX: 'auto',
+      '&::-webkit-scrollbar': {
+        display: 'none',
+      },
+      // show scrollbar when 'is-scrolling' class is added
+      '&.is-scrolling::-webkit-scrollbar': {
+        display: 'block',
+      },
       '> *': {
         flexShrink: 0,
       },
