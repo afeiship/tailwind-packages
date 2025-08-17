@@ -16,15 +16,4 @@ module.exports = function (pluginConfig) {
       },
     },
   });
-
-  matchUtilities(
-    {
-      'wkit-scrollbar-w': (value) => ({
-        '&::-webkit-scrollbar': {
-          width: value,
-        },
-      }),
-    },
-    { values: theme('spacing') },
-  );
 };
