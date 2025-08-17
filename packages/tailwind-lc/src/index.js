@@ -11,16 +11,15 @@ module.exports = plugin(
   function ({ addBase, matchUtilities, addUtilities, theme, variants, e }) {
     const values = theme('lineClamp');
 
-    addBase({ '[class^="lc-"]': { ...basicStyles } });
+    addBase({ '[class*="lc-"]': { ...basicStyles } });
 
     matchUtilities(
       {
         lc: (value) => ({
-          ...basicStyles,
           '-webkit-line-clamp': `${value}`,
         }),
       },
-      { values }
+      { values },
     );
   },
   {
@@ -37,5 +36,5 @@ module.exports = plugin(
     variants: {
       lineClamp: ['responsive'],
     },
-  }
+  },
 );
