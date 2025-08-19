@@ -1,5 +1,7 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
+
+const moduleOpacityBg = require('./modules/opacity-bg');
 
 module.exports = plugin(function (pluginConfig) {
-  // Add custom utilities here
+  moduleOpacityBg(pluginConfig);
 });
