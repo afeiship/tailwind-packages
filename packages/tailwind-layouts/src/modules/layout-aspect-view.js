@@ -48,15 +48,13 @@ module.exports = function (pluginApi) {
 
   matchComponents({
     'layout-aspect-view': (value) => {
-      const padding = calcPercent(value)
-      return {
-        paddingTop: `${padding}%`,
-      }
+      const paddingTop = calcPercent(value)
+      return { paddingTop }
     },
     'layout-aspect-img': (value) => {
-      const padding = calcPercent(value)
+      const paddingTop = calcPercent(value)
       return {
-        paddingTop: `${padding}%`,
+        paddingTop,
         '& > img': {
           ...baseAspectImageStyles,
         },
