@@ -1,4 +1,5 @@
 const baseStyles = {
+  zIndex: 1,
   position: 'absolute',
   color: 'white',
   borderRadius: '100rem', // 默认圆角,
