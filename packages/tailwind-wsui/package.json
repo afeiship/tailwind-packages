@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-wsui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wsui for tailwind.",
   "main": "src/index.js",
   "license": "MIT",
