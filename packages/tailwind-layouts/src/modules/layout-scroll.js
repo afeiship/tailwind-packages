@@ -12,30 +12,46 @@
  *   <a href="#9">日历怎么看黄历</a>
  * </nav>
  */
+const base = {
+  display: 'flex',
+  flexWrap: 'nowrap',
+  scrollBehavior: 'smooth',
+  width: '100%',
+  maxWidth: '100%',
+  '> *': {
+    flexShrink: 0,
+  },
+  '&::-webkit-scrollbar': {
+    display: 'none',
+  },
+}
+
 module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
 
-
-  return addComponents({
+  addComponents({
     '.layout-scroll-x': {
-      display: 'flex',
-      flexWrap: 'nowrap',
-      scrollBehavior: 'smooth',
-      width: '100%',
-      maxWidth: '100%',
+      ...base,
+      flexDirection: 'row',
       overflowX: 'auto',
-      '&::-webkit-scrollbar': {
-        display: 'none',
-      },
-      // show scrollbar when 'is-scrolling' class is added
-      '> *': {
-        flexShrink: 0,
-      },
+      overflowY: 'hidden',
       '> :first-child': {
         marginLeft: 'auto',
       },
       '> :last-child': {
         marginRight: 'auto',
+      },
+    },
+    '.layout-scroll-y': {
+      ...base,
+      flexDirection: 'column',
+      overflowY: 'auto',
+      overflowX: 'hidden',
+      '> :first-child': {
+        marginTop: 'auto',
+      },
+      '> :last-child': {
+        marginBottom: 'auto',
       },
     },
   })
