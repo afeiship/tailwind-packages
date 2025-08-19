@@ -42,7 +42,7 @@ function calcPercent(value) {
 module.exports = function (pluginApi) {
   const { matchComponents, addBase } = pluginApi
 
-  addBase({ '[class*="layout-aspect-view-"]': { ...baseViewStyles } })
+  addBase({ '[class*="layout-aspect-"]': { ...baseViewStyles } })
   addBase({ '[class*="is-aspect-content"]': { ...baseAspectContentStyles } })
   addBase({ '[class*="is-aspect-img"]': { ...baseAspectImageStyles } })
 
