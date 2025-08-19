@@ -1,3 +1,14 @@
+/**
+ * 适合场景:
+ * 1. 兼容性要求较高的图片展示场景
+ * 2. 需要保持图片比例的场景
+ * 3. 需要响应式图片展示的场景
+ * 4. 需要在不同屏幕尺寸下保持图片比例的场景
+ * 5. 需要在不同设备上保持图片比例的
+ * <figure className="layout-aspect-view-[33.33] debug my-5">
+ *   <img className='is-aspect-content' src="https://dummyimage.com/1200x400" />
+ * </figure>
+ */
 const baseViewStyles = {
   position: 'relative',
   width: '100%',
