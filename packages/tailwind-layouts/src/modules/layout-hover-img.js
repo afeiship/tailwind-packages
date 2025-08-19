@@ -13,7 +13,7 @@ module.exports = function (pluginApi) {
   return addComponents({
     '.layout-hover-img': {
       overflow: 'hidden',
-      '&>img, .is-hover-img': {
+      '& > img, .is-hover-img': {
         width: '100%',
         height: '100%',
         verticalAlign: 'middle',
