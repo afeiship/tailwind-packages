@@ -36,7 +36,7 @@ function calcPercent(value) {
   if (!width || !height) {
     return '100%'
   }
-  return ((parseFloat(width) / parseFloat(height)) * 100).toFixed(2) + '%'
+  return ((parseFloat(height) / parseFloat(width)) * 100).toFixed(2) + '%'
 }
 
 module.exports = function (pluginApi) {
