@@ -33,10 +33,8 @@ const baseAspectImageStyles = {
 
 function calcPercent(value) {
   const hasComma = value.includes(',')
-  const [width, height] = hasComma ? value.split(',') : [value, '1']
-  if (!width || !height) {
-    return '100%'
-  }
+  if (!hasComma) return `${value}%`
+  const [width, height] = value.split(',')
   return ((parseFloat(height) / parseFloat(width)) * 100).toFixed(2) + '%'
 }
 
