@@ -15,6 +15,7 @@
 module.exports = function (pluginApi) {
   const { addComponents } = pluginApi
 
+
   return addComponents({
     '.layout-scroll-x': {
       display: 'flex',
@@ -27,9 +28,6 @@ module.exports = function (pluginApi) {
         display: 'none',
       },
       // show scrollbar when 'is-scrolling' class is added
-      '&.is-scrolling::-webkit-scrollbar': {
-        display: 'block',
-      },
       '> *': {
         flexShrink: 0,
       },
