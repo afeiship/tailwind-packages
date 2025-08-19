@@ -8,12 +8,12 @@ const baseStyles = {
 }
 
 module.exports = function (pluginApi) {
-  const { addBase } = pluginApi
+  const { addComponents } = pluginApi
 
-  return addBase({
+  return addComponents({
     '.layout-hover-img': {
       overflow: 'hidden',
-      '&>img': {
+      '&>img, .is-hover-img': {
         width: '100%',
         height: '100%',
         verticalAlign: 'middle',
