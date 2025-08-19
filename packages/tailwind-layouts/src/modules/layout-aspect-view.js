@@ -5,6 +5,9 @@
  * 3. 需要响应式图片展示的场景
  * 4. 需要在不同屏幕尺寸下保持图片比例的场景
  * 5. 需要在不同设备上保持图片比例的
+ *
+ * value 计算:
+ *  value = width / height * 100
  * <figure className="layout-aspect-view-[33.33] debug my-5">
  *   <img className='is-aspect-content' src="https://dummyimage.com/1200x400" />
  * </figure>
@@ -37,8 +40,12 @@ module.exports = function (pluginApi) {
 
   matchComponents({
     'layout-aspect-view': (value) => {
+      const hasComma = value.includes(',')
+      const [width, height] = hasComma ? value.split(',') : [value, '1']
+      const padding = hasComma ? ((parseFloat(width) / parseFloat(height)) * 100).toFixed(2) : value
+
       return {
-        paddingTop: `${value}%`,
+        paddingTop: `${padding}%`,
       }
     },
   })
