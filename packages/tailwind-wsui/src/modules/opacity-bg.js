@@ -10,7 +10,7 @@ const baseStyles = {
 
 module.exports = function (pluginConfig) {
   const { matchComponents, addBase } = pluginConfig;
-  addBase({ '[class*="layout-abs-center"]': { ...baseStyles } });
+  addBase({ '[class*="wsui-opacity-bg-"]': { ...baseStyles } });
 
   // wsui-opacity-bg-40
   matchComponents({
