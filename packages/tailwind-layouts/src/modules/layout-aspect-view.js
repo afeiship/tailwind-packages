@@ -8,9 +8,13 @@
  *
  * value 计算:
  *  value = width / height * 100
- * <figure className="layout-aspect-view-[33.33] debug my-5">
- *   <img className='is-aspect-content' src="https://dummyimage.com/1200x400" />
- * </figure>
+ *  <figure className="layout-aspect-view-[33.33] debug my-5">
+ *    <img className="is-aspect-content" src="https://dummyimage.com/1200x400" />
+ *  </figure>
+ *
+ *  <figure className="layout-aspect-img-[3,1] debug my-5">
+ *    <img src="https://dummyimage.com/1200x400" />
+ *  </figure>
  */
 const baseViewStyles = {
   position: 'relative',
