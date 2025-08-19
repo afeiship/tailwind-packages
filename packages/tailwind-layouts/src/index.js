@@ -11,6 +11,7 @@ const moduleLayoutTextJustify = require('./modules/layout-text-justify')
 const moduleLayoutFlex = require('./modules/layout-flex')
 const moduleLayoutFlexList = require('./modules/layout-flex-list')
 const moduleLayoutFloatList = require('./modules/layout-float-list')
+const moduleLayoutHoverImg = require('./modules/layout-hover-img')
 const moduleLayoutFlexScrollable = require('./modules/layout-flex-scrollable')
 
 module.exports = plugin(function (pluginApi) {
@@ -27,5 +28,6 @@ module.exports = plugin(function (pluginApi) {
   moduleLayoutFlex(pluginApi)
   moduleLayoutFlexList(pluginApi)
   moduleLayoutFloatList(pluginApi)
+  moduleLayoutHoverImg(pluginApi)
   moduleLayoutFlexScrollable(pluginApi)
 })
