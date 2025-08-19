@@ -31,6 +31,14 @@ const baseAspectImageStyles = {
   objectFit: 'cover',
 }
 
+function calcPercent(value) {
+  const [width, height] = value.split(',')
+  if (!width || !height) {
+    return '100%'
+  }
+  return ((parseFloat(width) / parseFloat(height)) * 100).toFixed(2) + '%'
+}
+
 module.exports = function (pluginApi) {
   const { matchComponents, addBase } = pluginApi
 
@@ -40,12 +48,18 @@ module.exports = function (pluginApi) {
 
   matchComponents({
     'layout-aspect-view': (value) => {
-      const hasComma = value.includes(',')
-      const [width, height] = hasComma ? value.split(',') : [value, '1']
-      const padding = hasComma ? ((parseFloat(width) / parseFloat(height)) * 100).toFixed(2) : value
-
+      const padding = calcPercent(value)
       return {
         paddingTop: `${padding}%`,
+      }
+    },
+    'layout-aspect-img': (value) => {
+      const padding = calcPercent(value)
+      return {
+        paddingTop: `${padding}%`,
+        '& > img': {
+          ...baseAspectImageStyles,
+        },
       }
     },
   })
