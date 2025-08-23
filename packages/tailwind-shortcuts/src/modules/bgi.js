@@ -19,13 +19,13 @@ module.exports = function (pluginConfig) {
   };
 
   matchUtilities({
-    bgib: (value) => {
+    bgi: (value) => {
       return {
         ...bgImageRule(value),
         ...baseStyles,
       };
     },
-    bgi: (value) => {
+    bgix: (value) => {
       return bgImageRule(value);
     },
   });
