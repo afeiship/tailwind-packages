@@ -6,7 +6,7 @@ const baseStyles = {
 
 module.exports = function (pluginConfig) {
   const { matchUtilities, theme } = pluginConfig;
-  const basePath = theme('backgroundImage.basePath', '/public/images'); // 可配置根路径
+  const basePath = theme('backgroundImage.basePath', '/images'); // 可配置根路径
   // 公共函数：生成 URL
   const buildUrl = (path) => {
     return `${basePath}/${path}`.replace(/\/+/g, '/');
