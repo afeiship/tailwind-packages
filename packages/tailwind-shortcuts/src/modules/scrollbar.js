@@ -9,11 +9,6 @@ module.exports = function (pluginConfig) {
       '&::-webkit-scrollbar': {
         display: 'none',
       },
-    },
-    '.wkit-scrollbar-block': {
-      '&::-webkit-scrollbar': {
-        display: 'block',
-      },
-    },
+    }
   });
 };
