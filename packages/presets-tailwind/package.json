@@ -1,6 +1,6 @@
 {
   "name": "@jswork/presets-tailwind",
-  "version": "1.2.27",
+  "version": "1.2.28",
   "description": "Presets for me.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -35,7 +35,7 @@
     "@jswork/tailwind-line-height": "^1.0.6",
     "@jswork/tailwind-margin": "^1.0.1",
     "@jswork/tailwind-padding": "^1.0.2",
-    "@jswork/tailwind-shortcuts": "^1.0.34",
+    "@jswork/tailwind-shortcuts": "^1.0.35",
     "@jswork/tailwind-width": "^1.0.7"
   },
   "gitHead": "8fa31a48a26ce9ef212e833229fda5b73ee208ac"
