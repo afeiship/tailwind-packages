@@ -1,7 +1,7 @@
 // This file is used to add the corner classes to the tailwind config.
 
 module.exports = function (pluginConfig) {
-  const { addComponents, addBase } = pluginConfig;
+  const { addComponents, matchComponents, addBase, theme } = pluginConfig;
 
   addBase({
     '[class*="corner-"]': {
@@ -9,7 +9,7 @@ module.exports = function (pluginConfig) {
     },
   });
 
-  return addComponents({
+  addComponents({
     '.corner-top-left, .corner-t': {
       top: 0,
       left: 0,
@@ -27,4 +27,36 @@ module.exports = function (pluginConfig) {
       left: 0,
     },
   });
+
+  matchComponents(
+    {
+      'corner-t': (value) => {
+        return {
+          top: value,
+          left: value,
+        };
+      },
+      'corner-r': (value) => {
+        return {
+          top: value,
+          right: value,
+        };
+      },
+      'corner-b': (value) => {
+        return {
+          bottom: value,
+          right: value,
+        };
+      },
+      'corner-l': (value) => {
+        return {
+          bottom: value,
+          left: value,
+        };
+      },
+    },
+    {
+      values: theme('spacing'),
+    },
+  );
 };

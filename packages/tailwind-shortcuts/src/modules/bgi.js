@@ -5,7 +5,7 @@ const baseStyles = {
 };
 
 module.exports = function (pluginConfig) {
-  const { matchUtilities, theme } = pluginConfig;
+  const { matchComponents, theme } = pluginConfig;
   const basePath = theme('backgroundImage.basePath', '/images'); // 可配置根路径
   // 公共函数：生成 URL
   const buildUrl = (path) => {
@@ -18,7 +18,7 @@ module.exports = function (pluginConfig) {
     return { 'background-image': `url('${url}')` };
   };
 
-  matchUtilities({
+  matchComponents({
     bgi: (value) => {
       return {
         ...bgImageRule(value),
