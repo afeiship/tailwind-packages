@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tailwind-font-size",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Tailwind f1....f100 font-size plugin.",
   "main": "src/index.js",
   "license": "MIT",
