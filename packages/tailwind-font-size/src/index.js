@@ -1,14 +1,19 @@
-const plugin = require('tailwindcss/plugin');
+const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin(function({ matchUtilities, theme }) {
+module.exports = plugin(function ({matchUtilities, theme}) {
   matchUtilities({
-    f: (value) => ({
-      fontSize: value
-    }),
-    'f-px': (value) => {
-      return {
-        fontSize: parseFloat(value) / 4 + 'rem'
-      };
+      f: (value) => ({
+        fontSize: value
+      }),
+      'f-px': (value) => {
+        return {
+          fontSize: parseFloat(value) / 4 + 'rem'
+        }
+      }
+    },
+    {
+      values: theme('spacing'),
+      responsive: true,
     }
-  }, { values: theme('spacing') });
-});
+  )
+})
