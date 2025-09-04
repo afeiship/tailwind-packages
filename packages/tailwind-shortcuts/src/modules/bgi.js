@@ -1,11 +1,11 @@
 const baseStyles = {
   'background-size': 'cover',
   'background-repeat': 'no-repeat',
-  'background-position': 'center',
+  'background-position': 'center'
 };
 
 module.exports = function (pluginConfig) {
-  const { matchComponents, theme } = pluginConfig;
+  const { addBase, matchComponents, theme } = pluginConfig;
   const basePath = theme('backgroundImage.basePath', '/images'); // 可配置根路径
   // 公共函数：生成 URL
   const buildUrl = (path) => {
@@ -18,15 +18,21 @@ module.exports = function (pluginConfig) {
     return { 'background-image': `url('${url}')` };
   };
 
+  // 属性选择器
+  addBase({
+    '[class*="bgi-"]': {
+      ...baseStyles
+    }
+  });
+
   matchComponents({
     bgi: (value) => {
       return {
-        ...bgImageRule(value),
-        ...baseStyles,
+        ...bgImageRule(value)
       };
     },
     bgix: (value) => {
       return bgImageRule(value);
-    },
+    }
   });
 };
