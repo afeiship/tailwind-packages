@@ -36,6 +36,7 @@ module.exports = function (pluginApi) {
       overflowX: 'auto',
       overflowY: 'hidden',
       '> :first-child': {
+        // 这一行代码会导致，未达到 container width 的时候，所有元素居中效果，一般并不是预期的
         // marginLeft: 'auto',
       },
       '> :last-child': {
