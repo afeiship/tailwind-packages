@@ -11,6 +11,12 @@
  *   <a href="#8">农历手机自带的</a>
  *   <a href="#9">日历怎么看黄历</a>
  * </nav>
+ * [1]: Make a flex container so all our items align as necessary
+ * [2]: Prevent items from wrapping
+ * [3]: Automatic overflow means a scroll bar won’t be present if it isn’t needed
+ * [4]: Make it smooth scrolling on iOS devices
+ * [5]: Hide the ugly scrollbars in Edge until the scrollable area is hovered
+ * [6]: Hide the scroll bar in WebKit browsers
  */
 const base = {
   display: 'flex',
