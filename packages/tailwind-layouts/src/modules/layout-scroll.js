@@ -36,7 +36,7 @@ module.exports = function (pluginApi) {
       overflowX: 'auto',
       overflowY: 'hidden',
       '> :first-child': {
-        marginLeft: 'auto',
+        // marginLeft: 'auto',
       },
       '> :last-child': {
         marginRight: 'auto',
@@ -48,7 +48,7 @@ module.exports = function (pluginApi) {
       overflowY: 'auto',
       overflowX: 'hidden',
       '> :first-child': {
-        marginTop: 'auto',
+        // marginTop: 'auto',
       },
       '> :last-child': {
         marginBottom: 'auto',
